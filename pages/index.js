@@ -91,11 +91,15 @@ export default function Home() {
 const Container = styled.div``;
 const Header = styled.div`
   height: 80px;
-  padding: 20px 20px;
+  padding: 20px 60px;
   display: flex;
+
   img {
     width: 100%;
-    height: 100%;
+    @media (max-width: 768px) {
+      width: 20%;
+      height: 100%;
+    }
   }
 `;
 
@@ -104,6 +108,7 @@ const LogoNavbar = styled.img`
   margin-left: auto;
   @media (max-width: 768px) {
     display: block;
+    width: 13% !important;
   }
 `;
 
@@ -172,7 +177,7 @@ const LogoTwo = styled.div`
   }
 
   @media (max-width: 768px) {
-    width: 100%;
+    width: 120%;
   }
 `;
 
