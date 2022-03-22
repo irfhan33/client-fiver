@@ -180,6 +180,11 @@ const Main = styled.div`
       bottom: 50%;
       /* bottom: 95vw; */
     }
+
+    @media (max-width: 426px) {
+      bottom: 42%;
+      /* bottom: 95vw; */
+    }
   }
 `;
 
