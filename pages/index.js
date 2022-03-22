@@ -140,12 +140,12 @@ const Main = styled.div`
     bottom: 0;
 
     @media (max-width: 768px) {
-      bottom: 50%;
+      bottom: 45%;
       /* bottom: 95vw; */
     }
 
     @media (max-width: 426px) {
-      bottom: 38%;
+      bottom: 44%;
       /* bottom: 95vw; */
     }
   }
