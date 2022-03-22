@@ -79,7 +79,7 @@ export default function Home() {
               <IconItem>
                 <a
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   href="https://open.spotify.com/track/48udc7ntfemQCa8dpPIWD1?si=28e11d0fb26f40e0"
                 >
                   <img src="images/logo/spotify.svg" alt="" />
@@ -88,7 +88,7 @@ export default function Home() {
               <IconItem>
                 <a
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   href="https://music.apple.com/zw/album/sandwich-bag/1608450855?i=1608450872"
                 >
                   <img src="images/logo/apple.svg" alt="" />
@@ -98,7 +98,7 @@ export default function Home() {
               <IconItem>
                 <a
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   href="https://music.amazon.com.au/albums/B09RMN8Q99?marketplaceId=A15PK738MTQHSO&musicTerritory=AU&ref=dm_sh_5v7OQ8oC4n8YhC4Hyb4nQXjBW&trackAsin=B09RMZZ5RH"
                 >
                   <img src="images/logo/amazon.svg" alt="" />
@@ -107,7 +107,7 @@ export default function Home() {
               <IconItem>
                 <a
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   href="https://deezer.page.link/zbMxqvPbNFh9yYY76"
                 >
                   <img src="images/logo/deejar.svg" alt="" />
@@ -116,7 +116,7 @@ export default function Home() {
               <IconItem>
                 <a
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   href="https://tidal.com/browse/track/17311361"
                 >
                   <img src="images/logo/tinder.svg" alt="" />
