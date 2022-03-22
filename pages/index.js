@@ -226,7 +226,9 @@ const LogoTwo = styled.div`
   }
 
   @media (max-width: 768px) {
-    width: 80%;
+    width: 60%;
+    margin-top: 23px;
+    margin-bottom: 21px;
   }
 `;
 
@@ -320,5 +322,6 @@ const Buttons = styled.div`
   cursor: pointer;
   @media (max-width: 768px) {
     padding: 18px;
+    padding-top: 0;
   }
 `;
