@@ -128,6 +128,7 @@ const LogoRight = styled(LogoLeft)`
   }
 
   @media (max-width: 768px) {
+    margin-left: auto;
     display: flex;
   }
 `;
@@ -152,7 +153,7 @@ const Main = styled.div`
     }
 
     @media (max-width: 426px) {
-      bottom: 43%;
+      bottom: 38%;
       /* bottom: 95vw; */
     }
   }
@@ -164,12 +165,12 @@ const Content = styled.div`
   padding: 50px;
   display: flex;
   align-items: center;
-  gap: 50px;
+  /* gap: 50px; */
 
   @media (max-width: 768px) {
     flex-direction: column;
     padding: 10px;
-    gap: 30px;
+    /* gap: 30px; */
   }
 `;
 
@@ -185,10 +186,10 @@ const Right = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 60px;
+  /* gap: 60px; */
 
   @media (max-width: 768px) {
-    gap: 30px;
+    /* gap: 30px; */
   }
 `;
 const Thumbnail = styled.div`
@@ -212,6 +213,8 @@ const LogoOne = styled.div`
 `;
 const LogoTwo = styled.div`
   width: 60%;
+  margin-top: 50px;
+  margin-bottom: 50px;
 
   img {
     width: 100%;
@@ -244,23 +247,9 @@ const Footer = styled.div`
   }
 `;
 
-const Icons = styled.div`
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 20px;
-  justify-content: center;
-  align-content: center;
-
-  @media (max-width: 768px) {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
-  }
-`;
-
 const IconItem = styled.div`
   overflow: hidden;
-  cursor: pointer;
   transition: all 250ms;
-  /* background: gray; */
   border: 2px solid white;
   border-radius: 4px;
   text-align: center;
@@ -270,6 +259,7 @@ const IconItem = styled.div`
   text-align: center;
   display: flex;
   align-items: center;
+  margin: 8px;
 
   @media (max-width: 768px) {
     flex: unset;
@@ -294,7 +284,7 @@ const IconItem = styled.div`
 const Copyright = styled.div`
   display: flex;
   align-items: center;
-  gap: 10px;
+  /* gap: 10px; */
   margin-top: 40px;
   margin-bottom: 30px;
 
@@ -317,27 +307,11 @@ const Copyright = styled.div`
   }
 `;
 
-const IconRowTwo = styled.div`
-  display: grid;
-  gap: 20px;
-  grid-template-columns: repeat(2, minmax(0, 220px));
-  justify-content: center;
-  @media (max-width: 768px) {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
-  }
-`;
-
-const WrapperIco = styled.div`
-  gap: 20px;
-  display: flex;
-  flex-direction: column;
-`;
-
 const Buttons = styled.div`
   display: flex;
   flex-wrap: wrap;
   text-align: center;
   justify-content: center;
-  gap: 20px;
+  /* gap: 20px; */
   cursor: pointer;
 `;

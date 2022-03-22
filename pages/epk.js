@@ -468,7 +468,6 @@ const Instagram = styled.div`
 const Copyright = styled.div`
   display: flex;
   align-items: center;
-  gap: 10px;
   margin-top: 100px;
   margin-bottom: 30px;
 
@@ -477,6 +476,7 @@ const Copyright = styled.div`
   }
   img {
     width: 20px;
+    margin-right: 10px;
     @media (max-width: 768px) {
       width: 10px;
     }
