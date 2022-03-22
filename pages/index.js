@@ -100,7 +100,12 @@ const Header = styled.div`
 
   @media (max-width: 768px) {
     justify-content: space-between;
-    padding: 20px 20px;
+    padding: 20px 50px;
+  }
+
+  @media (max-width: 482px) {
+    justify-content: space-between;
+    padding: 20px 40px;
   }
 `;
 
@@ -150,6 +155,21 @@ const Main = styled.div`
       bottom: 43%;
       /* bottom: 95vw; */
     }
+  }
+`;
+
+const Content = styled.div`
+  z-index: 1;
+  position: relative;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding: 10px;
+    gap: 30px;
   }
 `;
 
@@ -268,21 +288,6 @@ const IconItem = styled.div`
     &:hover {
       filter: invert(0);
     }
-  }
-`;
-
-const Content = styled.div`
-  z-index: 1;
-  position: relative;
-  padding: 50px;
-  display: flex;
-  align-items: center;
-  gap: 50px;
-
-  @media (max-width: 768px) {
-    flex-direction: column;
-    padding: 10px;
-    gap: 30px;
   }
 `;
 
