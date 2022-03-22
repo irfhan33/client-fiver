@@ -100,16 +100,13 @@ const Header = styled.div`
 
   @media (max-width: 768px) {
     justify-content: space-between;
-    padding: 20px 50px;
-  }
-
-  @media (max-width: 482px) {
-    justify-content: space-between;
-    padding: 20px 40px;
+    padding: 20px 14vw;
   }
 `;
 
 const LogoLeft = styled.div`
+  display: flex;
+  align-items: center;
   img {
     width: 100%;
     height: 100%;
@@ -122,13 +119,8 @@ const LogoLeft = styled.div`
 `;
 const LogoRight = styled(LogoLeft)`
   display: none;
-  img {
-    width: 100%;
-    margin-left: auto;
-  }
 
   @media (max-width: 768px) {
-    margin-left: auto;
     display: flex;
   }
 `;
@@ -165,12 +157,10 @@ const Content = styled.div`
   padding: 50px;
   display: flex;
   align-items: center;
-  /* gap: 50px; */
 
   @media (max-width: 768px) {
     flex-direction: column;
-    padding: 10px;
-    /* gap: 30px; */
+    padding: 20px 14vw;
   }
 `;
 
@@ -178,7 +168,7 @@ const Left = styled.div`
   width: 50%;
 
   @media (max-width: 768px) {
-    width: 84%;
+    width: 100%;
   }
 `;
 const Right = styled.div`
@@ -186,10 +176,9 @@ const Right = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* gap: 60px; */
 
   @media (max-width: 768px) {
-    /* gap: 30px; */
+    width: 100%;
   }
 `;
 const Thumbnail = styled.div`
@@ -212,7 +201,7 @@ const LogoOne = styled.div`
   }
 `;
 const LogoTwo = styled.div`
-  width: 60%;
+  max-width: 200px;
   margin-top: 50px;
   margin-bottom: 50px;
 
@@ -314,4 +303,7 @@ const Buttons = styled.div`
   justify-content: center;
   /* gap: 20px; */
   cursor: pointer;
+  @media (max-width: 768px) {
+    padding: 18px;
+  }
 `;
