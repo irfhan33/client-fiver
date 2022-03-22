@@ -97,31 +97,44 @@ const Header = styled.div`
   padding: 20px 50px;
   display: flex;
   justify-content: center;
-
   @media (max-width: 768px) {
-    justify-content: space-between;
+    /* justify-content: space-between; */
     padding: 20px 14vw;
   }
 `;
 
 const LogoLeft = styled.div`
   display: flex;
-  align-items: center;
+  max-height: 40px;
+  width: 100%;
+  justify-content: center;
   img {
-    width: 100%;
+    /* width: 100%; */
     height: 100%;
-    max-height: 40px;
-
-    @media (max-width: 768px) {
-      max-height: 28px;
-    }
   }
-`;
-const LogoRight = styled(LogoLeft)`
-  display: none;
 
   @media (max-width: 768px) {
+    justify-content: flex-start;
+
+    max-height: 28px;
+  }
+`;
+const LogoRight = styled.div`
+  display: none;
+  max-height: 40px;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: flex-end;
+  @media (max-width: 768px) {
+    margin-left: auto;
     display: flex;
+    max-height: 28px;
+  }
+
+  img {
+    height: 100%;
+    margin-left: auto;
+    display: block;
   }
 `;
 
