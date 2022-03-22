@@ -33,18 +33,25 @@ function epk() {
             scrolling="no"
             frameBorder="no"
             allow="autoplay"
-            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/677733726&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1191759268&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
           ></iframe>
           <div className="tes">
-            <a href="https://soundcloud.com/the-bugle" title="The Bugle">
-              The Bugle
+            <a
+              href="https://soundcloud.com/hnryst"
+              title="HNRY ST"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              HNRY ST
             </a>{" "}
             ·{" "}
             <a
-              href="https://soundcloud.com/the-bugle/bugle-4121"
-              title="Bugle 4121 - WTF is going on?"
+              href="https://soundcloud.com/hnryst/1nlv"
+              title="1NLV"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              Bugle 4121 - WTF is going on?
+              1NLV
             </a>
           </div>
         </SoundcloudWraper>
@@ -200,18 +207,25 @@ function epk() {
           scrolling="no"
           frameBorder="no"
           allow="autoplay"
-          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/677733726&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1191759832&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
         ></iframe>
         <div className="tes">
-          <a href="https://soundcloud.com/the-bugle" title="The Bugle">
-            The Bugle
+          <a
+            href="https://soundcloud.com/hnryst"
+            title="HNRY ST"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            HNRY ST
           </a>{" "}
           ·{" "}
           <a
-            href="https://soundcloud.com/the-bugle/bugle-4121"
-            title="Bugle 4121 - WTF is going on?"
+            href="https://soundcloud.com/hnryst/tkmyhrt"
+            title="TKMYHRT"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            Bugle 4121 - WTF is going on?
+            TKMYHRT
           </a>
         </div>
       </SoundcloudTwo>

@@ -9,13 +9,14 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header>
-        <img src="/images/hnry_st_logo.svg" alt="" />
-        <LogoNavbar src="/images/1NLV_BIG.svg" alt="" />
+        <LogoLeft>
+          <img src="/images/hnry_st_logo.svg" alt="" />
+        </LogoLeft>
+        <LogoRight>
+          <img src="/images/1NLV_BIG.svg" alt="" />
+        </LogoRight>
       </Header>
       <Main>
-        {/* <BackgroundImage>
-          <img src="/images/hero_background.jpg" alt="" />
-        </BackgroundImage> */}
         <Content>
           <Left>
             <Thumbnail>
@@ -29,52 +30,6 @@ export default function Home() {
             <LogoTwo>
               <img src="images/listennow.svg" alt="" />
             </LogoTwo>
-            {/* <WrapperIco>
-              <Icons>
-                <IconItem>
-                  <a
-                    rel="noopener"
-                    href="https://music.apple.com/zw/album/sandwich-bag/1608450855?i=1608450872"
-                  >
-                    <img src="images/logo/apple.svg" alt="" />
-                  </a>
-                </IconItem>
-                <IconItem>
-                  <a
-                    rel="noopener"
-                    href="https://open.spotify.com/track/48udc7ntfemQCa8dpPIWD1?si=28e11d0fb26f40e0"
-                  >
-                    <img src="images/logo/spotify.svg" alt="" />
-                  </a>
-                </IconItem>
-                <IconItem>
-                  <a
-                    rel="noopener"
-                    href="https://music.amazon.com.au/albums/B09RMN8Q99?marketplaceId=A15PK738MTQHSO&musicTerritory=AU&ref=dm_sh_5v7OQ8oC4n8YhC4Hyb4nQXjBW&trackAsin=B09RMZZ5RH"
-                  >
-                    <img src="images/logo/amazon.svg" alt="" />
-                  </a>
-                </IconItem>
-              </Icons>
-              <IconRowTwo>
-                <IconItem>
-                  <a
-                    rel="noopener"
-                    href="https://deezer.page.link/zbMxqvPbNFh9yYY76"
-                  >
-                    <img src="images/logo/deejar.svg" alt="" />
-                  </a>
-                </IconItem>
-                <IconItem>
-                  <a
-                    rel="noopener"
-                    href="https://tidal.com/browse/track/17311361"
-                  >
-                    <img src="images/logo/tinder.svg" alt="" />
-                  </a>
-                </IconItem>
-              </IconRowTwo>
-            </WrapperIco> */}
             <Buttons>
               <IconItem>
                 <a
@@ -141,25 +96,34 @@ const Header = styled.div`
   height: 80px;
   padding: 20px 50px;
   display: flex;
+  justify-content: center;
 
-  img {
-    width: 100%;
-    @media (max-width: 768px) {
-      width: 40%;
-      height: 100%;
-    }
+  @media (max-width: 768px) {
+    justify-content: space-between;
+    padding: 20px 20px;
   }
 `;
 
-const LogoNavbar = styled.img`
-  display: none;
-  margin-left: auto;
-  @media (max-width: 768px) {
-    display: block;
-    width: 26% !important;
+const LogoLeft = styled.div`
+  img {
+    width: 100%;
+    height: 100%;
+    max-height: 40px;
+
+    @media (max-width: 768px) {
+      max-height: 28px;
+    }
   }
-  @media (max-width: 426px) {
-    width: 46% !important;
+`;
+const LogoRight = styled(LogoLeft)`
+  display: none;
+  img {
+    width: 100%;
+    margin-left: auto;
+  }
+
+  @media (max-width: 768px) {
+    display: flex;
   }
 `;
 
@@ -169,6 +133,7 @@ const Main = styled.div`
   &:before {
     content: "";
     background: url("images/hero_background.jpg");
+    background-position: bottom;
     left: 0;
     right: 0;
     top: 0;
@@ -182,7 +147,7 @@ const Main = styled.div`
     }
 
     @media (max-width: 426px) {
-      bottom: 42%;
+      bottom: 43%;
       /* bottom: 95vw; */
     }
   }
