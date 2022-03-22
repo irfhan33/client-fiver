@@ -59,16 +59,16 @@ function epk() {
           version soon after.
         </p>
         <p>
-          “It's almost like the song itself knows how big the energy is that it
-          offers you breaks throughout so you can catch your breath before you
-          go again.”
+          “It&lsquo;s almost like the song itself knows how big the energy is
+          that it offers you breaks throughout so you can catch your breath
+          before you go again.”
         </p>
         <p>
           The bass heavy track is sure to feature heavily on DJ setlists and
           playlists everywhere, dragging the listener around wildly as it lifts
-          and drops it's way through it's different stages. Not only does the
-          bass rumble you into submission, the hook and use of arps & versitile
-          synths keep you wanting more.
+          and drops it&lsquo;s way through it&lsquo;s different stages. Not only
+          does the bass rumble you into submission, the hook and use of arps &
+          versitile synths keep you wanting more.
         </p>
 
         <p>
@@ -77,8 +77,8 @@ function epk() {
           influencers will naturally shine through.”
         </p>
         <p>
-          “I couldn't be more excited for this track to finally come out and
-          kick start a long line of releases I have in store - I think that
+          “I couldn&lsquo;t be more excited for this track to finally come out
+          and kick start a long line of releases I have in store - I think that
           people are going to like what they hear.”
         </p>
       </TextOne>
@@ -102,20 +102,21 @@ function epk() {
         </p>
 
         <p>
-          HNRY ST's upcoming debut release, 1NLV, is a new branch of his work to
-          bring something fresh to the scene. “I'm so excited to put this track
-          out into the world. It's, I think, the second or third track I worked
-          on as HNRY ST. The build-up and energy in it is just crazy, especially
-          when it's played loud AF! Can't wait for people to hear it.”
+          HNRY ST&lsquo;s upcoming debut release, 1NLV, is a new branch of his
+          work to bring something fresh to the scene. “I&lsquo;m so excited to
+          put this track out into the world. It&lsquo;s, I think, the second or
+          third track I worked on as HNRY ST. The build-up and energy in it is
+          just crazy, especially when it&lsquo;s played loud AF! Can&lsquo;t
+          wait for people to hear it.”
         </p>
 
         <p>
           “My music is different because it is mine. And by mine, I mean that
-          it's music I love, I have an affinity for and could listen to all day.
-          I don't make music that I think people will like, or what might be
-          popular in a moment of time. My ear naturally gravitates to what I
-          like (old and new) and it more often than not creates inspiration for
-          my next project.”
+          it&lsquo;s music I love, I have an affinity for and could listen to
+          all day. I don&lsquo;t make music that I think people will like, or
+          what might be popular in a moment of time. My ear naturally gravitates
+          to what I like (old and new) and it more often than not creates
+          inspiration for my next project.”
         </p>
 
         <p>
@@ -136,37 +137,38 @@ function epk() {
           exhilarating about sitting with a pair of headphones on, listening to
           something that you have created. Even if it is only in the early
           stages of a song - a simple chord progression and a quirky synth or a
-          funky bass line with a guitar sample and basic beat. When I'm
-          listening to a song ready for release – it's another level again.”
+          funky bass line with a guitar sample and basic beat. When I&lsquo;m
+          listening to a song ready for release – it&lsquo;s another level
+          again.”
         </p>
 
         <p>
           Dedication to craft, belief and true enjoyment combines to create an
           incredible amount of excitement and continues to do so no matter how
-          many times you listen to HNRY ST's music.
+          many times you listen to HNRY ST&lsquo;s music.
         </p>
 
         <p>
           “Strangely, I find myself becoming a fan of the music in a weird kind
-          of way – like I'm separated from it somehow. I have had genuine
-          moments when I've thought to myself “How the F*ck did I put this
-          together? It's amazing!”
+          of way – like I&lsquo;m separated from it somehow. I have had genuine
+          moments when I&lsquo;ve thought to myself “How the F*ck did I put this
+          together? It&lsquo;s amazing!”
         </p>
 
         <p>
           “If it was the last song I ever got to listen to it would be People
-          Everyday by Arrested Development. There's no reason why other than I
-          just love the track. It has no nostalgic reference, certainly doesn't
-          remind me of a person or place or anything significant like that, it's
-          just a song that I have always loved.”
+          Everyday by Arrested Development. There&lsquo;s no reason why other
+          than I just love the track. It has no nostalgic reference, certainly
+          doesn&lsquo;t remind me of a person or place or anything significant
+          like that, it&lsquo;s just a song that I have always loved.”
         </p>
 
         <p>
           HNRY ST grew up listening to hip hop, rap and the Red Hot Chili
           Peppers. Being an adolescent of the 90s means he has a massive soft
           spot for hip hop music of that time, and what ensued from then. These
-          days he's more of a Pop/EDM fan and his music reflects these elements
-          and styles of music.
+          days he&lsquo;s more of a Pop/EDM fan and his music reflects these
+          elements and styles of music.
         </p>
 
         <p>
@@ -180,15 +182,15 @@ function epk() {
           by it and often wonder how I can incorporate that into my music
           somehow. It could be the way a chord progression is played, how an
           arrangement is structured or the way a lyric is intertwined throughout
-          a song. I've found that some of the biggest influences have come
-          unexpectedly from those that I have worked with. It's amazing to hear
-          someone's take on your work which ultimately alters the way you hear
-          it yourself.”
+          a song. I&lsquo;ve found that some of the biggest influences have come
+          unexpectedly from those that I have worked with. It&lsquo;s amazing to
+          hear someone&lsquo;s take on your work which ultimately alters the way
+          you hear it yourself.”
         </p>
 
         <p>
-          With a string of releases scheduled for 2022, it's an exciting time
-          for HNRY ST MZK!
+          With a string of releases scheduled for 2022, it&lsquo;s an exciting
+          time for HNRY ST MZK!
         </p>
       </TextTwo>
       <SneakPeek>
