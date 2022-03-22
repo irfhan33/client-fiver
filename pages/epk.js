@@ -26,26 +26,28 @@ function epk() {
         <img src="/images/release_text.svg" alt="" />
       </ReleaseDate>
       <SoundcloudOne>
-        <iframe
-          width="100%"
-          height="166"
-          scrolling="no"
-          frameBorder="no"
-          allow="autoplay"
-          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/677733726&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
-        ></iframe>
-        <div className="tes">
-          <a href="https://soundcloud.com/the-bugle" title="The Bugle">
-            The Bugle
-          </a>{" "}
-          ·{" "}
-          <a
-            href="https://soundcloud.com/the-bugle/bugle-4121"
-            title="Bugle 4121 - WTF is going on?"
-          >
-            Bugle 4121 - WTF is going on?
-          </a>
-        </div>
+        <SoundcloudWraper>
+          <iframe
+            width="100%"
+            height="166"
+            scrolling="no"
+            frameBorder="no"
+            allow="autoplay"
+            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/677733726&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+          ></iframe>
+          <div className="tes">
+            <a href="https://soundcloud.com/the-bugle" title="The Bugle">
+              The Bugle
+            </a>{" "}
+            ·{" "}
+            <a
+              href="https://soundcloud.com/the-bugle/bugle-4121"
+              title="Bugle 4121 - WTF is going on?"
+            >
+              Bugle 4121 - WTF is going on?
+            </a>
+          </div>
+        </SoundcloudWraper>
       </SoundcloudOne>
       <TextOne>
         <p>
@@ -193,7 +195,7 @@ function epk() {
       </SneakPeek>
       <SoundcloudTwo>
         <iframe
-          width="450"
+          width="100%"
           height="450"
           scrolling="no"
           frameBorder="no"
@@ -242,17 +244,21 @@ const Header = styled.div`
   @media (max-width: 768px) {
     padding: 30px 40px;
   }
+  @media (max-width: 426px) {
+    padding: 30px 18px;
+  }
 `;
 const LogoLeft = styled.div`
   img {
-    width: 40%;
+    width: 100%;
     height: 100%;
+    max-height: 40px;
   }
 `;
 const LogoRight = styled(LogoLeft)`
   display: flex;
   img {
-    width: 60%;
+    width: 100%;
     margin-left: auto;
   }
 `;
@@ -263,6 +269,10 @@ const Thumbnail = styled.div`
 
   @media (max-width: 768px) {
     padding: 76px;
+  }
+
+  @media (max-width: 426px) {
+    padding: 76px 18px;
   }
   img {
     width: 100%;
@@ -282,7 +292,9 @@ const ReleaseDate = styled.div`
   display: flex;
   justify-content: center;
   padding: 50px 76px;
-
+  @media (max-width: 426px) {
+    padding: 50px 32px;
+  }
   img {
     width: 100%;
     height: 100%;
@@ -290,15 +302,24 @@ const ReleaseDate = styled.div`
     @media (max-width: 768px) {
       max-width: 600px;
     }
+
+    @media (max-width: 426px) {
+      max-width: unset;
+    }
   }
 `;
 
 const SoundcloudOne = styled.div`
   display: flex;
-  flex-direction: column;
-  align-items: center;
   margin-bottom: 70px;
+  padding: 0 50px;
+  justify-content: center;
+`;
 
+const SoundcloudWraper = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 600px;
   iframe {
     max-width: 600px;
   }
@@ -326,6 +347,10 @@ const TextOne = styled.div`
   @media (max-width: 768px) {
     padding: 0 40px;
   }
+
+  @media (max-width: 426px) {
+    padding: 0 18px;
+  }
   p {
     font-size: 20px;
     font-family: "Raleway", sans-serif;
@@ -344,6 +369,9 @@ const Avatar = styled.div`
   padding: 0 76px;
   @media (max-width: 768px) {
     padding: 0 40px;
+  }
+  @media (max-width: 426px) {
+    padding: 0 18px;
   }
   img {
     width: 100%;
@@ -365,6 +393,9 @@ const TextTwo = styled.div`
   padding: 0 76px;
   @media (max-width: 768px) {
     padding: 0 40px;
+  }
+  @media (max-width: 426px) {
+    padding: 0 18px;
   }
   p {
     font-size: 16px;
@@ -407,6 +438,10 @@ const Footer = styled.div`
 
   a {
     font-size: 30px;
+
+    @media (max-width: 426px) {
+      font-size: 14px;
+    }
   }
 `;
 
@@ -424,7 +459,7 @@ const Copyright = styled.div`
   margin-bottom: 30px;
 
   @media (max-width: 768px) {
-    margin-top: 10px;
+    margin-top: 100px;
   }
   img {
     width: 20px;
@@ -448,6 +483,9 @@ const SoundcloudTwo = styled.div`
   align-items: center;
   margin: 60px 0;
   margin-bottom: 100px;
+  iframe {
+    max-width: 400px;
+  }
   .tes {
     font-size: 10px;
     color: #cccccc;

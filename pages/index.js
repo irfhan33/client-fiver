@@ -158,6 +158,9 @@ const LogoNavbar = styled.img`
     display: block;
     width: 26% !important;
   }
+  @media (max-width: 426px) {
+    width: 46% !important;
+  }
 `;
 
 const Main = styled.div`
