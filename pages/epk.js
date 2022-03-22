@@ -35,18 +35,13 @@ function epk() {
           src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/677733726&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
         ></iframe>
         <div className="tes">
-          <a
-            href="https://soundcloud.com/the-bugle"
-            title="The Bugle"
-            target="_blank"
-          >
+          <a href="https://soundcloud.com/the-bugle" title="The Bugle">
             The Bugle
           </a>{" "}
           ·{" "}
           <a
             href="https://soundcloud.com/the-bugle/bugle-4121"
             title="Bugle 4121 - WTF is going on?"
-            target="_blank"
           >
             Bugle 4121 - WTF is going on?
           </a>
@@ -206,18 +201,13 @@ function epk() {
           src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/677733726&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
         ></iframe>
         <div className="tes">
-          <a
-            href="https://soundcloud.com/the-bugle"
-            title="The Bugle"
-            target="_blank"
-          >
+          <a href="https://soundcloud.com/the-bugle" title="The Bugle">
             The Bugle
           </a>{" "}
           ·{" "}
           <a
             href="https://soundcloud.com/the-bugle/bugle-4121"
             title="Bugle 4121 - WTF is going on?"
-            target="_blank"
           >
             Bugle 4121 - WTF is going on?
           </a>
@@ -229,11 +219,7 @@ function epk() {
       <Footer>
         <a href="mailto:mzk@hnryst.com">mzk@hnryst.com</a>
         <Instagram>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://www.instagram.com/hnryst_mzk/"
-          >
+          <a href="https://www.instagram.com/hnryst_mzk/">
             <img src="/instagram.svg" alt="" />
           </a>
         </Instagram>

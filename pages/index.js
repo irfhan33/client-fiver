@@ -78,6 +78,7 @@ export default function Home() {
             <Buttons>
               <IconItem>
                 <a
+                  target="_blank"
                   rel="noopener noreferrer"
                   href="https://open.spotify.com/track/48udc7ntfemQCa8dpPIWD1?si=28e11d0fb26f40e0"
                 >
@@ -86,6 +87,7 @@ export default function Home() {
               </IconItem>
               <IconItem>
                 <a
+                  target="_blank"
                   rel="noopener noreferrer"
                   href="https://music.apple.com/zw/album/sandwich-bag/1608450855?i=1608450872"
                 >
@@ -95,6 +97,7 @@ export default function Home() {
 
               <IconItem>
                 <a
+                  target="_blank"
                   rel="noopener noreferrer"
                   href="https://music.amazon.com.au/albums/B09RMN8Q99?marketplaceId=A15PK738MTQHSO&musicTerritory=AU&ref=dm_sh_5v7OQ8oC4n8YhC4Hyb4nQXjBW&trackAsin=B09RMZZ5RH"
                 >
@@ -103,6 +106,7 @@ export default function Home() {
               </IconItem>
               <IconItem>
                 <a
+                  target="_blank"
                   rel="noopener noreferrer"
                   href="https://deezer.page.link/zbMxqvPbNFh9yYY76"
                 >
@@ -111,6 +115,7 @@ export default function Home() {
               </IconItem>
               <IconItem>
                 <a
+                  target="_blank"
                   rel="noopener noreferrer"
                   href="https://tidal.com/browse/track/17311361"
                 >
