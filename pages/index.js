@@ -153,12 +153,12 @@ const Main = styled.div`
     bottom: 0;
 
     @media (max-width: 768px) {
-      bottom: 45%;
+      bottom: 47%;
       /* bottom: 95vw; */
     }
 
     @media (max-width: 426px) {
-      bottom: 44%;
+      bottom: 47%;
       /* bottom: 95vw; */
     }
   }
@@ -197,9 +197,12 @@ const Right = styled.div`
 const Thumbnail = styled.div`
   margin-top: 14px;
   img {
-    width: 100%;
+    width: 85%;
     height: 100%;
     box-shadow: 57px 52px 124px rgba(0, 0, 0, 0.77);
+    @media (max-width: 768px) {
+      width: 100%;
+    }
   }
 `;
 const LogoOne = styled.div`
@@ -214,17 +217,16 @@ const LogoOne = styled.div`
   }
 `;
 const LogoTwo = styled.div`
-  max-width: 200px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-
+  margin-top: 30px;
+  margin-bottom: 18px;
+  width: 50%;
   img {
     width: 100%;
     height: 100%;
   }
 
   @media (max-width: 768px) {
-    width: 100%;
+    width: 80%;
   }
 `;
 

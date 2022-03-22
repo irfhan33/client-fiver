@@ -252,28 +252,36 @@ const Container = styled.div``;
 
 const Header = styled.div`
   display: flex;
-  justify-content: space-between;
   padding: 30px 76px;
-
+  justify-content: space-between;
   @media (max-width: 768px) {
-    padding: 30px 40px;
+    padding: 30px 8vw;
   }
   @media (max-width: 426px) {
-    padding: 30px 18px;
+    padding: 30px 10vw;
   }
 `;
 const LogoLeft = styled.div`
+  display: flex;
+  height: 40px;
+
+  @media (max-width: 426px) {
+    height: 34px;
+  }
   img {
-    width: 100%;
     height: 100%;
-    max-height: 40px;
   }
 `;
-const LogoRight = styled(LogoLeft)`
+const LogoRight = styled.div`
   display: flex;
+  height: 40px;
+
+  @media (max-width: 426px) {
+    height: 34px;
+  }
+
   img {
-    width: 100%;
-    margin-left: auto;
+    height: 100%;
   }
 `;
 const Thumbnail = styled.div`
@@ -286,7 +294,7 @@ const Thumbnail = styled.div`
   }
 
   @media (max-width: 426px) {
-    padding: 76px 18px;
+    padding: 76px 5vw;
   }
   img {
     width: 100%;
