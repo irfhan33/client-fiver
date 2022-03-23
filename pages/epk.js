@@ -5,7 +5,10 @@ import { useState, useEffect } from "react";
 import Headerrr from "../components/Header";
 
 export default function epk() {
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  //   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const [x, setX] = useState(0);
+  const [y, setY] = useState(0);
+
   const [lyric, setLyric] = useState(false);
 
   //   const MousePosition = () => {
@@ -21,11 +24,14 @@ export default function epk() {
   //   };
   //   const { x, y } = MousePosition();
 
-  const x = mousePosition.x;
-  const y = mousePosition.y;
+  //   const x = mousePosition.x;
+  //   const y = mousePosition.y;
 
   const lyricHandler = (e) => {
-    setMousePosition({ x: e.clientX, y: e.clientY });
+    // setMousePosition({ x: e.clientX, y: e.clientY });
+    setX(e.clientX);
+    setY(e.clientY);
+
   };
 
   return (
