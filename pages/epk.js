@@ -488,8 +488,8 @@ const Avatar = styled.div`
   display: flex;
   display: -webkit-flex;
   justify-content: space-between;
-  align-items: end;
-  -webkit-align-items: end;
+  /* align-items: end;
+  -webkit-align-items: end; */
   padding: 0 76px;
 
   @media (max-width: 768px) {
@@ -514,7 +514,7 @@ const AvatarRight = styled.div`
   max-width: 100px;
   width: 100px;
   min-width: 58px;
-
+  margin-top: auto;
   display: flex;
 
   img {
