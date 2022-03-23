@@ -2,7 +2,8 @@ import Head from "next/head";
 import React from "react";
 import styled from "styled-components";
 import { useState, useEffect } from "react";
-const useMousePosition = () => {
+import Headerrr from "../components/Header";
+const MousePosition = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
@@ -17,7 +18,7 @@ const useMousePosition = () => {
 };
 
 function epk() {
-  const { x, y } = useMousePosition();
+  const { x, y } = MousePosition();
 
   const [lyric, setLyric] = useState(false);
   console.log(lyric);
@@ -27,21 +28,22 @@ function epk() {
         <title>EPK - HNRY ST</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header>
+      {/* <Header>
         <LogoLeft>
           <img src="/images/epk_logo.svg" alt="" />
         </LogoLeft>
         <LogoRight>
           <img src="/images/hnry_st_logo.svg" alt="" />
         </LogoRight>
-      </Header>
+      </Header> */}
+      <Headerrr />
       <Thumbnail>
         <Wrapper>
           <img src="/images/1NLV_Cover_Artwork_800.jpg" alt="" />
         </Wrapper>
       </Thumbnail>
       <ReleaseDate>
-        <img src="/images/release_text.svg" alt="" />
+        <img src="/images/release_text_fix.svg" alt="" />
       </ReleaseDate>
       <SoundcloudOne>
         <SoundcloudWraper>
@@ -72,20 +74,19 @@ function epk() {
               1NLV
             </a>
           </div>
+          <div
+            className="lyricButton"
+            onMouseEnter={() => setLyric(true)}
+            onMouseLeave={() => setLyric(false)}
+          >
+            <img src="/images/lyrics_icon.svg" alt="" />
+          </div>
         </SoundcloudWraper>
-        <div
-          className="lyricButton"
-          onMouseEnter={() => setLyric(true)}
-          onMouseLeave={() => setLyric(false)}
-        >
-          <img src="/images/lyrics_icon.svg" alt="" />
-        </div>
       </SoundcloudOne>
       <TextOne>
         <p>
           HNRY ST bursts onto the scene with his thumping, high energy debut...
-          1NLV. The original release is set to be followed by a tweaked vocal
-          version soon after.
+          1NLV.
         </p>
         <p>
           “It&lsquo;s almost like the song itself knows how big the energy is
@@ -223,7 +224,7 @@ function epk() {
         </p>
       </TextTwo>
       <SneakPeek>
-        <img src="images/sneakpeek.svg" alt="" />
+        <img src="images/sneakpeekfix.svg" alt="" />
       </SneakPeek>
       <SoundcloudTwo>
         <iframe
@@ -260,7 +261,11 @@ function epk() {
       <Footer>
         <a href="mailto:mzk@hnryst.com">mzk@hnryst.com</a>
         <Instagram>
-          <a href="https://www.instagram.com/hnryst_mzk/">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.instagram.com/hnryst_mzk/"
+          >
             <img src="/instagram.svg" alt="" />
           </a>
         </Instagram>
@@ -340,9 +345,20 @@ const LogoRight = styled.div`
 `;
 const Thumbnail = styled.div`
   display: flex;
-  padding: 0 76px;
+  padding: 10px 76px;
   justify-content: center;
-
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("/images/hero_background.jpg");
+    background-position: bottom;
+    background-size: contain;
+  }
   @media (max-width: 768px) {
     padding: 76px;
   }
@@ -353,12 +369,13 @@ const Thumbnail = styled.div`
   img {
     width: 100%;
     height: 100%;
+    box-shadow: 57px 0px 124px rgba(0, 0, 0, 0.77);
   }
 `;
 
 const Wrapper = styled.div`
   max-width: 600px;
-
+  z-index: 1;
   @media (max-width: 768px) {
     max-width: 280px;
   }
@@ -367,6 +384,8 @@ const Wrapper = styled.div`
 const ReleaseDate = styled.div`
   display: flex;
   justify-content: center;
+  z-index: 10;
+
   padding: 50px 76px;
   @media (max-width: 426px) {
     padding: 50px 32px;
@@ -403,7 +422,7 @@ const SoundcloudWraper = styled.div`
   display: flex;
   flex-direction: column;
   width: 600px;
-
+  position: relative;
   @media (max-width: 768px) {
     width: 100%;
   }
@@ -455,24 +474,35 @@ const Avatar = styled.div`
   justify-content: space-between;
   align-items: end;
   padding: 0 76px;
+
   @media (max-width: 768px) {
     padding: 0 40px;
   }
+
   @media (max-width: 426px) {
     padding: 0 18px;
   }
+`;
+const AvatarLeft = styled.div`
+  max-width: 675px;
+
+  display: flex;
   img {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
 `;
-const AvatarLeft = styled.div`
-  max-width: 675px;
-`;
 const AvatarRight = styled.div`
   max-width: 100px;
+  width: 100px;
+  min-width: 58px;
+
+  display: flex;
+
   img {
+    width: 100%;
+    height: 100%;
     object-fit: contain;
   }
 `;
@@ -511,11 +541,18 @@ const ReleaseDataTwo = styled.div`
   margin-top: 30px;
   display: flex;
   justify-content: center;
+
   img {
     width: 100%;
-    max-width: 400px;
-    max-height: 100px;
-    object-fit: contain;
+    height: 100%;
+    max-width: 450px;
+    @media (max-width: 768px) {
+      max-width: 600px;
+    }
+
+    @media (max-width: 426px) {
+      max-width: unset;
+    }
   }
 `;
 const Footer = styled.div`
