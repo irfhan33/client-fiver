@@ -251,9 +251,11 @@ export default function Epk() {
           time for HNRY ST MZK!
         </p>
       </TextTwo>
-      <SneakPeek>
-        <img src="/images/sneakpeekfix.svg" alt="" />
-      </SneakPeek>
+      <SneakPeekWrapper>
+        <SneakPeek>
+          <img src="/images/sneakpeekfix.svg" alt="" />
+        </SneakPeek>
+      </SneakPeekWrapper>
       <SoundcloudTwo>
         <iframe
           width="100%"
@@ -418,7 +420,8 @@ const ReleaseDate = styled.div`
   justify-content: center;
   z-index: 10;
 
-  padding: 50px 76px;
+  padding: 50px 50px;
+
   @media (max-width: 426px) {
     padding: 50px 32px;
   }
@@ -426,12 +429,13 @@ const ReleaseDate = styled.div`
     width: 100%;
     height: 100%;
     max-width: 450px;
+
     @media (max-width: 768px) {
       max-width: 600px;
     }
 
     @media (max-width: 426px) {
-      max-width: unset;
+      max-width: 300px;
     }
   }
 `;
@@ -559,16 +563,22 @@ const TextTwo = styled.div`
     }
   }
 `;
-const SneakPeek = styled.div`
+
+const SneakPeekWrapper = styled.div`
   background-color: #d5353a;
-  padding: 40px 40px;
   margin: 100px 0;
   display: flex;
   justify-content: center;
-
+  padding: 40px 40px;
+`;
+const SneakPeek = styled.div`
+  max-width: 900px;
+  background: gray;
+  display: flex;
+  width: 100%;
   img {
     width: 100%;
-    max-width: 900px;
+    height: 100%;
   }
 `;
 const ReleaseDataTwo = styled.div`
@@ -576,16 +586,22 @@ const ReleaseDataTwo = styled.div`
   display: flex;
   justify-content: center;
 
+  padding: 50px 50px;
+
+  @media (max-width: 426px) {
+    padding: 50px 32px;
+  }
   img {
     width: 100%;
     height: 100%;
     max-width: 310px;
+
     @media (max-width: 768px) {
-      max-width: 400px;
+      max-width: 390px;
     }
 
     @media (max-width: 426px) {
-      max-width: 260px;
+      max-width: 210px;
     }
   }
 `;
