@@ -6,6 +6,7 @@ import Headerrr from "../components/Header";
 
 export default function epk() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const [lyric, setLyric] = useState(false);
 
   const MousePosition = () => {
     useEffect(() => {
@@ -20,8 +21,6 @@ export default function epk() {
   };
   const { x, y } = MousePosition();
 
-  const [lyric, setLyric] = useState(false);
-  console.log(lyric);
   return (
     <Container>
       <Head>
