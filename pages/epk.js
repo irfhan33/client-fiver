@@ -8,18 +8,25 @@ export default function epk() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [lyric, setLyric] = useState(false);
 
-  const MousePosition = () => {
-    useEffect(() => {
-      const updateMousePosition = (event) => {
-        setMousePosition({ x: event.clientX, y: event.clientY });
-      };
-      window.addEventListener("mousemove", updateMousePosition);
+  //   const MousePosition = () => {
+  //     useEffect(() => {
+  //       const updateMousePosition = (event) => {
+  //         setMousePosition({ x: event.clientX, y: event.clientY });
+  //       };
+  //       window.addEventListener("mousemove", updateMousePosition);
 
-      return () => window.removeEventListener("mousemove", updateMousePosition);
-    });
-    return mousePosition;
+  //       return () => window.removeEventListener("mousemove", updateMousePosition);
+  //     });
+  //     return mousePosition;
+  //   };
+  //   const { x, y } = MousePosition();
+
+  const x = mousePosition.x;
+  const y = mousePosition.y;
+
+  const lyricHandler = (e) => {
+    setMousePosition({ x: e.clientX, y: e.clientY });
   };
-  const { x, y } = MousePosition();
 
   return (
     <Container>
@@ -75,7 +82,12 @@ export default function epk() {
           </div>
           <div
             className="lyricButton"
-            onMouseEnter={() => setLyric(true)}
+            onMouseMove={(e) => {
+              lyricHandler(e);
+            }}
+            onMouseEnter={(e) => {
+              setLyric(true);
+            }}
             onMouseLeave={() => setLyric(false)}
           >
             <img src="/images/lyrics_icon.svg" alt="" />
