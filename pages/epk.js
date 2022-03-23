@@ -3,21 +3,21 @@ import React from "react";
 import styled from "styled-components";
 import { useState, useEffect } from "react";
 import Headerrr from "../components/Header";
-const MousePosition = () => {
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-
-  useEffect(() => {
-    const updateMousePosition = (event) => {
-      setMousePosition({ x: event.clientX, y: event.clientY });
-    };
-    window.addEventListener("mousemove", updateMousePosition);
-
-    return () => window.removeEventListener("mousemove", updateMousePosition);
-  });
-  return mousePosition;
-};
 
 function epk() {
+  const MousePosition = () => {
+    const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+
+    useEffect(() => {
+      const updateMousePosition = (event) => {
+        setMousePosition({ x: event.clientX, y: event.clientY });
+      };
+      window.addEventListener("mousemove", updateMousePosition);
+
+      return () => window.removeEventListener("mousemove", updateMousePosition);
+    });
+    return mousePosition;
+  };
   const { x, y } = MousePosition();
 
   const [lyric, setLyric] = useState(false);
