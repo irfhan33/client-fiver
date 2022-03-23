@@ -375,11 +375,11 @@ const Thumbnail = styled.div`
     background-size: contain;
   }
   @media (max-width: 768px) {
-    padding: 76px;
+    padding: 35px;
   }
 
   @media (max-width: 426px) {
-    padding: 76px 5vw;
+    padding: 35px 5vw;
   }
   img {
     width: 100%;
@@ -562,13 +562,13 @@ const ReleaseDataTwo = styled.div`
   img {
     width: 100%;
     height: 100%;
-    max-width: 450px;
+    max-width: 310px;
     @media (max-width: 768px) {
-      max-width: 600px;
+      max-width: 400px;
     }
 
     @media (max-width: 426px) {
-      max-width: unset;
+      max-width: 260px;
     }
   }
 `;
