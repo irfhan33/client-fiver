@@ -31,7 +31,7 @@ const LogoLeft = styled.div`
   display: flex;
   max-height: 40px;
   width: 100%;
-  justify-content: center;
+  justify-content: flex-start;
   img {
     /* width: 100%; */
     height: 100%;
@@ -39,7 +39,6 @@ const LogoLeft = styled.div`
 
   @media (max-width: 768px) {
     justify-content: flex-start;
-
     max-height: 28px;
   }
 `;
@@ -47,7 +46,6 @@ const LogoRight = styled.div`
   max-height: 40px;
   width: 100%;
   justify-content: flex-end;
-  align-items: flex-end;
   @media (max-width: 768px) {
     margin-left: auto;
     max-height: 28px;

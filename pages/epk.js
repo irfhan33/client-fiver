@@ -95,7 +95,13 @@ export default function Epk() {
             }}
             onMouseLeave={() => setLyric(false)}
           >
-            <img src="/images/lyrics_icon.svg" alt="" />
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="/images/1NLV_LYRICS.jpg"
+            >
+              <img src="/images/lyrics_icon.svg" alt="" />
+            </a>
           </div>
         </SoundcloudWraper>
       </SoundcloudOne>
@@ -130,7 +136,13 @@ export default function Epk() {
       </TextOne>
       <Avatar>
         <AvatarLeft>
-          <img src="/images/HNRY_ST_Bio_Profile.jpg" alt="" />
+          <a
+            href="/images/HNRY_ST_Bio_Profile.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="/images/HNRY_ST_Bio_Profile.jpg" alt="" />
+          </a>
         </AvatarLeft>
         <AvatarRight>
           <img src="/images/bio.svg" alt="" />
@@ -240,7 +252,7 @@ export default function Epk() {
         </p>
       </TextTwo>
       <SneakPeek>
-        <img src="images/sneakpeekfix.svg" alt="" />
+        <img src="/images/sneakpeekfix.svg" alt="" />
       </SneakPeek>
       <SoundcloudTwo>
         <iframe
@@ -272,7 +284,7 @@ export default function Epk() {
         </div>
       </SoundcloudTwo>
       <ReleaseDataTwo>
-        <img src="images/tkmyhrt.svg" alt="" />
+        <img src="/images/tkmyhrt.svg" alt="" />
       </ReleaseDataTwo>
       <Footer>
         <a href="mailto:mzk@hnryst.com">mzk@hnryst.com</a>
@@ -286,9 +298,10 @@ export default function Epk() {
           </a>
         </Instagram>
         <Copyright>
-          <img src="images/1NLV.svg" alt="" /> <span>©2022 HNRY ST mzk</span>
+          <img src="/images/1NLV.svg" alt="" /> <span>©2022 HNRY ST mzk</span>
         </Copyright>
       </Footer>
+
       <Lyric src="/images/1NLV_LYRICS.jpg" x={x} y={y} lyric={lyric} />
     </Container>
   );
@@ -297,16 +310,19 @@ export default function Epk() {
 const Container = styled.div``;
 
 const Lyric = styled.img`
-  position: absolute;
+  position: fixed;
   transition: all 100ms;
   border-radius: 10px;
   z-index: 3;
-  left: ${({ x }) => x && x + "px"};
-  top: ${({ y }) => y && y + "px"};
-  transform: translate(calc(-100% - 20px), 500px);
-  opacity: 0.8;
-
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.9;
   ${({ lyric }) => (lyric ? "display:block;" : "display:none;")};
+
+  /* left: ${({ x }) => x && x + "px"};
+  top: ${({ y }) => y && y + "px"};
+  transform: translate(calc(-100% - 20px), 500px); */
 `;
 
 const LyricButton = styled.div`
@@ -363,6 +379,7 @@ const Thumbnail = styled.div`
   padding: 10px 76px;
   justify-content: center;
   position: relative;
+  padding-top: 60px;
   &:before {
     content: "";
     position: absolute;

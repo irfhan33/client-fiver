@@ -28,7 +28,7 @@ export default function Home() {
               <img src="/images/1NLV_BIG.svg" alt="" />
             </LogoOne>
             <LogoTwo>
-              <img src="images/listennow.svg" alt="" />
+              <img src="/images/listennow.svg" alt="" />
             </LogoTwo>
             <Buttons>
               <IconItem>
