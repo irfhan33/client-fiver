@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { useState, useEffect } from "react";
 import Headerrr from "../components/Header";
 
-export default function epk() {
+export default function Epk() {
   //   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [x, setX] = useState(0);
   const [y, setY] = useState(0);
@@ -31,7 +31,6 @@ export default function epk() {
     // setMousePosition({ x: e.clientX, y: e.clientY });
     setX(e.clientX);
     setY(e.clientY);
-
   };
 
   return (
