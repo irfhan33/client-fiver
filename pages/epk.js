@@ -486,8 +486,10 @@ const TextOne = styled.div`
 `;
 const Avatar = styled.div`
   display: flex;
+  display: -webkit-flex;
   justify-content: space-between;
   align-items: end;
+  -webkit-align-items: end;
   padding: 0 76px;
 
   @media (max-width: 768px) {
