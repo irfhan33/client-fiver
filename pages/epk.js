@@ -1,8 +1,26 @@
 import Head from "next/head";
 import React from "react";
 import styled from "styled-components";
+import { useState, useEffect } from "react";
+const useMousePosition = () => {
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+
+  useEffect(() => {
+    const updateMousePosition = (event) => {
+      setMousePosition({ x: event.clientX, y: event.clientY });
+    };
+    window.addEventListener("mousemove", updateMousePosition);
+
+    return () => window.removeEventListener("mousemove", updateMousePosition);
+  });
+  return mousePosition;
+};
 
 function epk() {
+  const { x, y } = useMousePosition();
+
+  const [lyric, setLyric] = useState(false);
+  console.log(lyric);
   return (
     <Container>
       <Head>
@@ -55,6 +73,13 @@ function epk() {
             </a>
           </div>
         </SoundcloudWraper>
+        <div
+          className="lyricButton"
+          onMouseEnter={() => setLyric(true)}
+          onMouseLeave={() => setLyric(false)}
+        >
+          <img src="/images/lyrics_icon.svg" alt="" />
+        </div>
       </SoundcloudOne>
       <TextOne>
         <p>
@@ -243,12 +268,41 @@ function epk() {
           <img src="images/1NLV.svg" alt="" /> <span>©2022 HNRY ST mzk</span>
         </Copyright>
       </Footer>
+      <Lyric src="/images/1NLV_LYRICS.jpg" x={x} y={y} lyric={lyric} />
     </Container>
   );
 }
 
 export default epk;
 const Container = styled.div``;
+
+const Lyric = styled.img`
+  position: absolute;
+  transition: all 100ms;
+  border-radius: 10px;
+  z-index: 3;
+  left: ${({ x }) => x && x + "px"};
+  top: ${({ y }) => y && y + "px"};
+  transform: translate(calc(-100% - 20px), 500px);
+  opacity: 0.8;
+
+  ${({ lyric }) => (lyric ? "display:block;" : "display:none;")};
+`;
+
+const LyricButton = styled.div`
+  margin-left: 10px;
+  margin-bottom: 14px;
+  background: red;
+  width: 40px;
+  height: 40px;
+  display: block;
+  cursor: pointer;
+
+  img {
+    width: 40px;
+    height: 40px;
+  }
+`;
 
 const Header = styled.div`
   display: flex;
@@ -336,12 +390,24 @@ const SoundcloudOne = styled.div`
   margin-bottom: 70px;
   padding: 0 50px;
   justify-content: center;
+  position: relative;
+  align-items: flex-end;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 const SoundcloudWraper = styled.div`
   display: flex;
   flex-direction: column;
   width: 600px;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+
   iframe {
     max-width: 600px;
   }

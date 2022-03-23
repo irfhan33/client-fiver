@@ -18,3 +18,12 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.lyricButton {
+  margin-left: 10px;
+  margin-bottom: 14px;
+  width: 40px;
+  height: 40px;
+  display: block;
+  cursor: pointer;
+}
