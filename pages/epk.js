@@ -4,10 +4,10 @@ import styled from "styled-components";
 import { useState, useEffect } from "react";
 import Headerrr from "../components/Header";
 
-function epk() {
-  const MousePosition = () => {
-    const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+export default function epk() {
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
+  const MousePosition = () => {
     useEffect(() => {
       const updateMousePosition = (event) => {
         setMousePosition({ x: event.clientX, y: event.clientY });
@@ -278,7 +278,6 @@ function epk() {
   );
 }
 
-export default epk;
 const Container = styled.div``;
 
 const Lyric = styled.img`
