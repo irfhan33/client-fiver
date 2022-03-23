@@ -573,7 +573,6 @@ const SneakPeekWrapper = styled.div`
 `;
 const SneakPeek = styled.div`
   max-width: 900px;
-  background: gray;
   display: flex;
   width: 100%;
   img {
