@@ -98,7 +98,6 @@ const Header = styled.div`
   display: flex;
   justify-content: center;
   @media (max-width: 768px) {
-    /* justify-content: space-between; */
     padding: 20px 14vw;
   }
 `;
@@ -109,7 +108,6 @@ const LogoLeft = styled.div`
   width: 100%;
   justify-content: center;
   img {
-    /* width: 100%; */
     height: 100%;
   }
 
@@ -154,12 +152,10 @@ const Main = styled.div`
 
     @media (max-width: 768px) {
       bottom: 47%;
-      /* bottom: 95vw; */
     }
 
     @media (max-width: 426px) {
       bottom: 47%;
-      /* bottom: 95vw; */
     }
   }
 `;

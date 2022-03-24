@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   styledComponents: true,
-  exportTrailingSlash: true,
+  assetPrefix: "./",
 };
 
 module.exports = nextConfig;

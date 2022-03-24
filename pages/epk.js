@@ -28,9 +28,7 @@ export default function Epk() {
           <img src="/images/1NLV_Cover_Artwork_800.jpg" alt="" />
         </Wrapper>
       </Thumbnail>
-      {/* <ReleaseDate>
-        <img src="/images/release_text_fix.svg" alt="" />
-      </ReleaseDate> */}
+
       <ReleaseDateText>
         <span>HNRY ST</span>
         <span>DEBUT RELEASE - 1NLV</span>
@@ -266,9 +264,7 @@ export default function Epk() {
           </a>
         </div>
       </SoundcloudTwo>
-      {/* <ReleaseDataTwo>
-        <img src="/images/tkmyhrt.svg" alt="" />
-      </ReleaseDataTwo> */}
+
       <ReleaseDateText>
         <span>TKMYHRT</span>
         <span>APRIL 22, 2022</span>
@@ -294,7 +290,13 @@ export default function Epk() {
   );
 }
 
-const Container = styled.div``;
+const Container = styled.div`
+  @font-face {
+    font-family: "Release Date";
+    src: url("/Neue\ Plak\ Black.ttf") format("truetype");
+    font-weight: bold;
+  }
+`;
 
 const Lyric = styled.img`
   position: fixed;
