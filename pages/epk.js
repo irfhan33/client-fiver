@@ -5,30 +5,12 @@ import { useState, useEffect } from "react";
 import Headerrr from "../components/Header";
 
 export default function Epk() {
-  //   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [x, setX] = useState(0);
   const [y, setY] = useState(0);
 
   const [lyric, setLyric] = useState(false);
 
-  //   const MousePosition = () => {
-  //     useEffect(() => {
-  //       const updateMousePosition = (event) => {
-  //         setMousePosition({ x: event.clientX, y: event.clientY });
-  //       };
-  //       window.addEventListener("mousemove", updateMousePosition);
-
-  //       return () => window.removeEventListener("mousemove", updateMousePosition);
-  //     });
-  //     return mousePosition;
-  //   };
-  //   const { x, y } = MousePosition();
-
-  //   const x = mousePosition.x;
-  //   const y = mousePosition.y;
-
   const lyricHandler = (e) => {
-    // setMousePosition({ x: e.clientX, y: e.clientY });
     setX(e.clientX);
     setY(e.clientY);
   };
@@ -39,23 +21,22 @@ export default function Epk() {
         <title>EPK - HNRY ST</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      {/* <Header>
-        <LogoLeft>
-          <img src="/images/epk_logo.svg" alt="" />
-        </LogoLeft>
-        <LogoRight>
-          <img src="/images/hnry_st_logo.svg" alt="" />
-        </LogoRight>
-      </Header> */}
+
       <Headerrr />
       <Thumbnail>
         <Wrapper>
           <img src="/images/1NLV_Cover_Artwork_800.jpg" alt="" />
         </Wrapper>
       </Thumbnail>
-      <ReleaseDate>
+      {/* <ReleaseDate>
         <img src="/images/release_text_fix.svg" alt="" />
-      </ReleaseDate>
+      </ReleaseDate> */}
+      <ReleaseDateText>
+        <span>HNRY ST</span>
+        <span>DEBUT RELEASE - 1NLV</span>
+        <span>APRIL 1, 2022</span>
+      </ReleaseDateText>
+
       <SoundcloudOne>
         <SoundcloudWraper>
           <iframe
@@ -285,9 +266,13 @@ export default function Epk() {
           </a>
         </div>
       </SoundcloudTwo>
-      <ReleaseDataTwo>
+      {/* <ReleaseDataTwo>
         <img src="/images/tkmyhrt.svg" alt="" />
-      </ReleaseDataTwo>
+      </ReleaseDataTwo> */}
+      <ReleaseDateText>
+        <span>TKMYHRT</span>
+        <span>APRIL 22, 2022</span>
+      </ReleaseDateText>
       <Footer>
         <a href="mailto:mzk@hnryst.com">mzk@hnryst.com</a>
         <Instagram>
@@ -419,7 +404,7 @@ const ReleaseDate = styled.div`
   display: flex;
   justify-content: center;
   z-index: 10;
-
+  background: gray;
   padding: 50px 50px;
 
   @media (max-width: 426px) {
@@ -676,5 +661,30 @@ const SoundcloudTwo = styled.div`
       color: #cccccc;
       text-decoration: none;
     }
+  }
+`;
+
+const ReleaseDateText = styled.div`
+  font-family: "Release Date";
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 44px;
+  padding: 50px 0;
+
+  @media (max-width: 560px) {
+    font-size: 36px;
+  }
+  @media (max-width: 460px) {
+    font-size: 30px;
+  }
+  @media (max-width: 400px) {
+    font-size: 28px;
+  }
+  @media (max-width: 350px) {
+    font-size: 24px;
+  }
+  span {
+    margin-top: -9px;
   }
 `;

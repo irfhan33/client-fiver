@@ -40,3 +40,9 @@ a {
     margin: 0 auto;
   }
 }
+
+@font-face {
+  font-family: "Release Date";
+  src: url("/Neue\ Plak\ Black.ttf") format("truetype");
+  font-weight: bold;
+}
