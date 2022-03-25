@@ -8,7 +8,9 @@ function Headerrr() {
         <img src="/images/epk_logo.svg" alt="" />
       </LogoLeft>
       <LogoRight>
-        <img src="/images/hnry_st_logo.svg" alt="" />
+        <a href="http://hnryst.com">
+          <img src="/images/hnry_st_logo.svg" alt="" />
+        </a>
       </LogoRight>
     </Header>
   );

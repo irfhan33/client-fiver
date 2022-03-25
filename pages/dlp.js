@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Headerrr from "../components/Header";
+import Headerrr from "./../components/Header";
 import Head from "next/head";
 import Footer from "./../components/Footer";
 
@@ -8,7 +8,7 @@ function Dlp() {
   return (
     <Container>
       <Head>
-        <title>DLP Page</title>
+        <title>DLP - HNRY ST</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Headerrr />
@@ -25,9 +25,9 @@ function Dlp() {
           <li>
             <Number>1.1.</Number>
             <p>
-              This is direct licensing policy of HNRY ST mzk (we/us/our). At
-              present we do not have the capacity to directly licensing any of
-              our sound recordings or music videos for public performance of
+              This is the direct licensing policy of HNRY ST mzk (we/us/our). At
+              present we do not have the capacity to directly license any of our
+              sound recordings or music videos for public performance or
               communication.
             </p>
           </li>
@@ -47,29 +47,65 @@ function Dlp() {
               In the meantime, if you require a licence for the public
               performance of one of our sound recordings or music videos you
               should contact OneMusic Australia through the website
-              <a href=""> http://onemusic.com.au</a> or call{" "}
-              <a href="">1300 162 162</a>. If you require a licence for the
-              communication of one of our sound recordings or music videos, you
-              should contact the Phonographic Performance Company of Australia
-              (PPCA) at <a href="">www.ppca.com.au</a> or by calling{" "}
-              <a href="">(02) 8569-1100</a>.
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://onemusic.com.au"
+              >
+                {" "}
+                https://onemusic.com.au
+              </a>{" "}
+              or call{" "}
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="tel:1300 162 162"
+              >
+                1300 162 162
+              </a>
+              . If you require a licence for the communication of one of our
+              sound recordings or music videos, you should contact the
+              Phonographic Performance Company of Australia (PPCA) at{" "}
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://ppca.com.au"
+              >
+                www.ppca.com.au
+              </a>{" "}
+              or by calling{" "}
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="tel:(02) 8569-1100"
+              >
+                (02) 8569-1100
+              </a>
+              .
             </p>
           </li>
           <li>
             <Number>1.4.</Number>
             <p>
-              If you wish to provide any feedback or commanets on our direct
-              licensing policy, please email <a href="">mzk@hnryst.com</a>. You
-              are also welcome to email us to enquire about licensing one of our
-              sound recordings for a use that is not covered by a PPCA license.
-              Such uses may include but are not limited to:
+              If you wish to provide any feedback or comments on our direct
+              licensing policy, please email{" "}
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="mailto:mzk@hnryst.com"
+              >
+                mzk@hnryst.com
+              </a>
+              . You are also welcome to email us to enquire about licensing one
+              of our sound recordings for a use that is not covered by a PPCA
+              license. Such uses may include but are not limited to:
             </p>
           </li>
           <span>
-            a{")"} Including my sound recordings on compilation; and/or
+            a{")"} Including my sound recordings on a compilation; and/or
           </span>
           <span>
-            b{")"} Synchronising my sound recordings for film or telivision
+            b{")"} synchronising my sound recordings for film or television.
           </span>
         </ul>
       </Content>
@@ -88,16 +124,41 @@ const Container = styled.div`
   }
 `;
 const Content = styled.div`
-  padding: 0 50px;
-  background: url("/images/hero_background.jpg");
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: 100% 70%;
+  /* background-size: contain; */
+  position: relative;
+  z-index: 99;
+  &:before {
+    content: "";
+    background: url("images/hero_background.jpg");
+    background-position: bottom;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    position: absolute;
+    bottom: 30%;
+    @media (max-width: 768px) {
+      bottom: 47%;
+    }
+
+    @media (max-width: 426px) {
+      bottom: 47%;
+    }
+  }
+  padding: 0 76px;
+  @media (max-width: 768px) {
+    padding: 0 40px;
+  }
+
+  @media (max-width: 426px) {
+    padding: 0 18px;
+  }
   ul {
     list-style: none;
     display: flex;
     flex-direction: column;
-
+    margin: 0;
+    padding: 0;
     li {
       display: flex;
 
@@ -105,6 +166,11 @@ const Content = styled.div`
         font-size: 20px;
         font-family: "Raleway", sans-serif;
         line-height: 1.75rem;
+
+        @media (max-width: 768px) {
+          font-size: 20px;
+          line-height: 1.75rem;
+        }
         a {
           color: red;
         }
@@ -126,15 +192,18 @@ const Title = styled.div`
   text-align: center;
   font-size: 44px;
   padding: 30px 0;
-
-  @media (max-width: 560px) {
+  white-space: nowrap;
+  @media (max-width: 620px) {
     font-size: 36px;
   }
-  @media (max-width: 460px) {
+  @media (max-width: 560px) {
+    font-size: 32px;
+  }
+  @media (max-width: 472px) {
     font-size: 30px;
   }
-  @media (max-width: 400px) {
-    font-size: 28px;
+  @media (max-width: 447px) {
+    font-size: 26px;
   }
   @media (max-width: 350px) {
     font-size: 24px;

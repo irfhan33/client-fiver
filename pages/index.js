@@ -1,5 +1,7 @@
 import Head from "next/head";
 import styled from "styled-components";
+import FooterCr from "../components/FooterCr";
+// import Footer from "./../components/Footer";
 
 export default function Home() {
   return (
@@ -83,10 +85,12 @@ export default function Home() {
       </Main>
       <Footer>
         <a href="mailto:mzk@hnryst.com">mzk@hnryst.com</a>
-        <Copyright>
+        {/* <Copyright>
           <img src="images/1NLV.svg" alt="" /> <span>©2022 HNRY ST mzk</span>
-        </Copyright>
+        </Copyright> */}
+        <FooterCr home="true" />
       </Footer>
+      {/* <Footer /> */}
     </Container>
   );
 }

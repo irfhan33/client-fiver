@@ -2,8 +2,8 @@ import Head from "next/head";
 import React from "react";
 import styled from "styled-components";
 import { useState, useEffect } from "react";
-import Headerrr from "../components/Header";
-import Footer from "../components/Footer";
+import Headerrr from "./../components/Header";
+import Footer from "./../components/Footer";
 
 export default function Epk() {
   const [x, setX] = useState(0);

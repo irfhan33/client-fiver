@@ -1,10 +1,13 @@
 import React from "react";
 import styled from "styled-components";
+import FooterCr from "./FooterCr";
 
 function Footer() {
   return (
     <Container>
-      <a href="mailto:mzk@hnryst.com">mzk@hnryst.com</a>
+      <a target="_blank" rel="noopener noreferrer" href="mailto:mzk@hnryst.com">
+        mzk@hnryst.com
+      </a>
       <Instagram>
         <a
           target="_blank"
@@ -14,9 +17,7 @@ function Footer() {
           <img src="/instagram.svg" alt="" />
         </a>
       </Instagram>
-      <Copyright>
-        <img src="/images/1NLV.svg" alt="" /> <span>©2022 HNRY ST mzk</span>
-      </Copyright>
+      <FooterCr />
     </Container>
   );
 }
@@ -42,30 +43,5 @@ const Instagram = styled.div`
   margin-top: 20px;
   img {
     width: 40px;
-  }
-`;
-const Copyright = styled.div`
-  display: flex;
-  align-items: center;
-  margin-top: 100px;
-  margin-bottom: 30px;
-
-  @media (max-width: 768px) {
-    margin-top: 100px;
-  }
-  img {
-    width: 20px;
-    margin-right: 10px;
-    @media (max-width: 768px) {
-      width: 10px;
-    }
-  }
-
-  span {
-    font-size: 16px;
-
-    @media (max-width: 768px) {
-      font-size: 12px;
-    }
   }
 `;
