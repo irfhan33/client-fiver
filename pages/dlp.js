@@ -11,7 +11,7 @@ function Dlp() {
         <title>DLP - HNRY ST</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Headerrr />
+      <Headerrr dlp="true" />
       <Content>
         <Title>
           <span>HNRY ST mzk</span>

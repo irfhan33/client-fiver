@@ -1,11 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 
-function Headerrr() {
+function Headerrr({ dlp }) {
   return (
     <Header>
       <LogoLeft>
-        <img src="/images/epk_logo.svg" alt="" />
+        <img
+          src={`${dlp ? "/images/dlp.svg" : "/images/epk_logo.svg"}`}
+          alt=""
+        />
       </LogoLeft>
       <LogoRight>
         <a href="http://hnryst.com">

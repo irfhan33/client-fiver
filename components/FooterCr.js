@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Link from "next/link";
 
 function FooterCr({ home }) {
   return (
@@ -9,7 +10,9 @@ function FooterCr({ home }) {
       </div>
       <Dlp>
         <span>
-          <a href="/dlp">Direct Licensing Police</a>
+          <Link href="/dlp">
+            <a>Direct Licensing Police</a>
+          </Link>
         </span>
       </Dlp>
     </Copyright>
