@@ -8,14 +8,14 @@ export default function Home() {
     <Container>
       <Head>
         <title>HNRY ST - Streaming Now</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="favicon.ico" />
       </Head>
       <Header>
         <LogoLeft>
-          <img src="/images/hnry_st_logo.svg" alt="" />
+          <img src="images/hnry_st_logo.svg" alt="" />
         </LogoLeft>
         <LogoRight>
-          <img src="/images/1NLV_BIG.svg" alt="" />
+          <img src="images/1NLV_BIG.svg" alt="" />
         </LogoRight>
       </Header>
       <Main>
@@ -25,18 +25,18 @@ export default function Home() {
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href="/images/1NLV_Cover_Artwork_800.jpg"
+                href="images/1NLV_Cover_Artwork_800.jpg"
               >
-                <img src="/images/1NLV_Cover_Artwork_800.jpg" alt="" />
+                <img src="images/1NLV_Cover_Artwork_800.jpg" alt="" />
               </a>
             </Thumbnail>
           </Left>
           <Right>
             <LogoOne>
-              <img src="/images/1NLV_BIG.svg" alt="" />
+              <img src="images/1NLV_BIG.svg" alt="" />
             </LogoOne>
             <LogoTwo>
-              <img src="/images/listennow.svg" alt="" />
+              <img src="images/listennow.svg" alt="" />
             </LogoTwo>
             <Buttons>
               <IconItem>
