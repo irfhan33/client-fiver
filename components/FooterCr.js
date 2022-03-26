@@ -11,7 +11,7 @@ function FooterCr({ home }) {
       <Dlp>
         <span>
           <Link href="/dlp">
-            <a>Direct Licensing Police</a>
+            <a>Direct Licensing Policy</a>
           </Link>
         </span>
       </Dlp>
@@ -24,7 +24,7 @@ export default FooterCr;
 const Copyright = styled.div`
   display: flex;
   align-items: center;
-  ${({ home }) => (home ? "margin-top:50px;" : "margin-top:100px;")};
+  ${({ home }) => (home ? "margin-top:50px;" : "margin-top:60px;")};
 
   /* margin-top: 100px; */
   margin-bottom: 30px;

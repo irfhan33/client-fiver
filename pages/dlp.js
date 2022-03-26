@@ -102,10 +102,10 @@ function Dlp() {
             </p>
           </li>
           <span>
-            a{")"} Including my sound recordings on a compilation; and/or
+            a{")"} Including our sound recordings on a compilation; and/or
           </span>
           <span>
-            b{")"} synchronising my sound recordings for film or television.
+            b{")"} synchronising our sound recordings for film or television.
           </span>
         </ul>
       </Content>
@@ -192,6 +192,7 @@ const Title = styled.div`
   text-align: center;
   font-size: 44px;
   padding: 30px 0;
+  padding-bottom: 10px;
   white-space: nowrap;
   @media (max-width: 620px) {
     font-size: 36px;
@@ -208,9 +209,9 @@ const Title = styled.div`
   @media (max-width: 350px) {
     font-size: 24px;
   }
-  span {
+  /* span {
     margin-top: -9px;
-  }
+  } */
 `;
 
 const Number = styled.p`
