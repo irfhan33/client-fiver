@@ -22,7 +22,13 @@ export default function Home() {
         <Content>
           <Left>
             <Thumbnail>
-              <img src="/images/1NLV_Cover_Artwork_800.jpg" alt="" />
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="/images/1NLV_Cover_Artwork_800.jpg"
+              >
+                <img src="/images/1NLV_Cover_Artwork_800.jpg" alt="" />
+              </a>
             </Thumbnail>
           </Left>
           <Right>
