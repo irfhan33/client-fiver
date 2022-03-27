@@ -4,6 +4,7 @@ import styled from "styled-components";
 import { useState, useEffect } from "react";
 import Headerrr from "./../components/Header";
 import Footer from "./../components/Footer";
+import Link from "next/link";
 
 export default function Epk() {
   const [x, setX] = useState(0);
@@ -37,13 +38,9 @@ export default function Epk() {
               </a>
             </AvatarLeft>
             <AvatarRight>
-              <a
-                href="http://hnryst.com/bio"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <Link href="/bio">
                 <img src="/images/bio.svg" alt="" />
-              </a>
+              </Link>
             </AvatarRight>
           </Avatar>
           <TextTwo>
