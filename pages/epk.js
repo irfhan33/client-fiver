@@ -369,8 +369,9 @@ const Thumbnail = styled.div`
     right: 0;
     bottom: 0;
     background: url("/images/hero_background.jpg");
-    background-position: bottom;
-    background-size: contain;
+    /* background-position: bottom; */
+
+    background-position: -190px -260px;
   }
   @media (max-width: 768px) {
     padding: 35px;
