@@ -131,7 +131,13 @@ export default function Epk() {
           </a>
         </AvatarLeft>
         <AvatarRight>
-          <img src="/images/bio.svg" alt="" />
+          <a
+            href="http://hnryst.com/bio"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="/images/bio.svg" alt="" />
+          </a>
         </AvatarRight>
       </Avatar>
       <TextTwo>
