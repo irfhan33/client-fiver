@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import FooterCr from "./FooterCr";
+import Link from "next/link";
 
 function Footer({ bio }) {
   return (
@@ -19,9 +20,9 @@ function Footer({ bio }) {
           </a>
         </Instagram>
         <BioFooter>
-          <a target="_blank" rel="noopener noreferrer" href="/bio_footer.png">
+          <Link href="/bio">
             <img src="/images/bio_footer.svg" alt="" />
-          </a>
+          </Link>
         </BioFooter>
       </WrapperLogo>
       <FooterCr />
@@ -36,7 +37,7 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   margin-top: 60px;
-  ${({ bio }) => (bio ? "margin-top:100px;" : "margin-top: 60px;")};
+  ${({ bio }) => (bio ? "margin-top:80px;" : "margin-top: 60px;")};
 
   a {
     font-size: 30px;
@@ -58,6 +59,7 @@ const Instagram = styled.div`
 
 const BioFooter = styled(Instagram)`
   margin-left: 10px;
+  cursor: pointer;
 `;
 const WrapperLogo = styled.div`
   display: flex;
