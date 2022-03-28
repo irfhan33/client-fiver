@@ -99,12 +99,12 @@ export default function Home() {
               rel="noopener noreferrer"
               href="https://www.instagram.com/hnryst_mzk/"
             >
-              <img src="/instagram.svg" alt="" />
+              <img src="instagram.svg" alt="" />
             </a>
           </Instagram>
           <BioFooter>
-            <Link href="/bio">
-              <img src="/images/bio_footer.svg" alt="" />
+            <Link href="bio">
+              <img src="images/bio_footer.svg" alt="" />
             </Link>
           </BioFooter>
         </WrapperLogo>

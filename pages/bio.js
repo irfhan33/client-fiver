@@ -24,7 +24,7 @@ export default function Epk() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Headerrr />
+      <Headerrr image="../images/bio_horizontal.svg" />
       <Main>
         <Content>
           <Avatar>

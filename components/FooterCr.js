@@ -6,7 +6,7 @@ function FooterCr({ home }) {
   return (
     <Copyright home={home}>
       <div className="copyright">
-        <img src="/images/1NLV.svg" alt="" /> <span>©2022 HNRY ST mzk</span>
+        <img src="../images/1NLV.svg" alt="" /> <span>©2022 HNRY ST mzk</span>
       </div>
       <Dlp>
         <span>

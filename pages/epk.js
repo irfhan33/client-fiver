@@ -24,15 +24,15 @@ export default function Epk() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Headerrr />
+      <Headerrr image="../images/epk_logo.svg" />
       <Thumbnail>
         <Wrapper>
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="/images/1NLV_Cover_Artwork_800.jpg"
+            href="../images/1NLV_Cover_Artwork_800.jpg"
           >
-            <img src="/images/1NLV_Cover_Artwork_800.jpg" alt="" />
+            <img src="../images/1NLV_Cover_Artwork_800.jpg" alt="" />
           </a>
         </Wrapper>
       </Thumbnail>
@@ -85,9 +85,9 @@ export default function Epk() {
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="/images/1NLV_LYRICS.jpg"
+              href="../images/1NLV_LYRICS.jpg"
             >
-              <img src="/images/lyrics_icon.svg" alt="" />
+              <img src="../images/lyrics_icon.svg" alt="" />
             </a>
           </div>
         </SoundcloudWraper>
@@ -124,16 +124,16 @@ export default function Epk() {
       <Avatar>
         <AvatarLeft>
           <a
-            href="/images/HNRY_ST_Bio_Profile.jpg"
+            href="../images/HNRY_ST_Bio_Profile.jpg"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="/images/HNRY_ST_Bio_Profile.jpg" alt="" />
+            <img src="../images/HNRY_ST_Bio_Profile.jpg" alt="" />
           </a>
         </AvatarLeft>
         <AvatarRight>
           <Link href="/bio">
-            <img src="/images/bio.svg" alt="" />
+            <img src="../images/bio.svg" alt="" />
           </Link>
         </AvatarRight>
       </Avatar>
@@ -242,7 +242,7 @@ export default function Epk() {
       </TextTwo>
       <SneakPeekWrapper>
         <SneakPeek>
-          <img src="/images/sneakpeekfix.svg" alt="" />
+          <img src="../images/sneakpeekfix.svg" alt="" />
         </SneakPeek>
       </SneakPeekWrapper>
       <SoundcloudTwo>
@@ -280,7 +280,7 @@ export default function Epk() {
         <span>APRIL 22, 2022</span>
       </ReleaseDateText>
       <Footer />
-      <Lyric src="/images/1NLV_LYRICS.jpg" x={x} y={y} lyric={lyric} />
+      <Lyric src="../images/1NLV_LYRICS.jpg" x={x} y={y} lyric={lyric} />
     </Container>
   );
 }
@@ -288,7 +288,7 @@ export default function Epk() {
 const Container = styled.div`
   @font-face {
     font-family: "Release Date";
-    src: url("/Neue\ Plak\ Black.ttf") format("truetype");
+    src: url("../Neue\ Plak\ Black.ttf") format("truetype");
     font-weight: bold;
   }
 `;
@@ -371,7 +371,7 @@ const Thumbnail = styled.div`
     left: 0;
     right: 0;
     bottom: 0;
-    background: url("/images/hero_background.jpg");
+    background: url("../images/hero_background.jpg");
     /* background-position: bottom; */
 
     background-position: -190px -260px;
