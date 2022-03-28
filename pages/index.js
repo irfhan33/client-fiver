@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import styled from "styled-components";
 import FooterCr from "../components/FooterCr";
 // import Footer from "./../components/Footer";
@@ -91,16 +92,46 @@ export default function Home() {
       </Main>
       <Footer>
         <a href="mailto:mzk@hnryst.com">mzk@hnryst.com</a>
-        {/* <Copyright>
-          <img src="images/1NLV.svg" alt="" /> <span>©2022 HNRY ST mzk</span>
-        </Copyright> */}
+        <WrapperLogo>
+          <Instagram>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.instagram.com/hnryst_mzk/"
+            >
+              <img src="/instagram.svg" alt="" />
+            </a>
+          </Instagram>
+          <BioFooter>
+            <Link href="/bio">
+              <img src="/images/bio_footer.svg" alt="" />
+            </Link>
+          </BioFooter>
+        </WrapperLogo>
         <FooterCr home="true" />
       </Footer>
       {/* <Footer /> */}
     </Container>
   );
 }
+const WrapperLogo = styled.div`
+  display: flex;
+  align-items: center;
+`;
 
+const Instagram = styled.div`
+  margin-top: 20px;
+  margin-right: 10px;
+
+  img {
+    width: 40px;
+  }
+`;
+
+const BioFooter = styled(Instagram)`
+  margin-left: 10px;
+  cursor: pointer;
+`;
 const Container = styled.div``;
 const Header = styled.div`
   height: 80px;
