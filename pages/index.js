@@ -104,7 +104,7 @@ export default function Home() {
           </Instagram>
           <BioFooter>
             <Link href="bio">
-              <img src="images/bio_footer_large.svg" alt="" />
+              <img src="images/bio_footer_4x.png" alt="" />
             </Link>
           </BioFooter>
         </WrapperLogo>
@@ -124,7 +124,13 @@ const Instagram = styled.div`
   margin-right: 10px;
 
   img {
-    width: 40px;
+    width: 45px;
+    object-fit: contain;
+    image-rendering: -moz-crisp-edges; /* Firefox */
+    image-rendering: -o-crisp-edges; /* Opera */
+    image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming) */
+    image-rendering: crisp-edges;
+    -ms-interpolation-mode: nearest-neighbor; /* IE (non-standard property) */
   }
 `;
 
