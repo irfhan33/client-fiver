@@ -104,7 +104,7 @@ export default function Home() {
           </Instagram>
           <BioFooter>
             <Link href="bio">
-              <img src="images/bio_footer_4x.png" alt="" />
+              <img src="images/test.png" alt="" />
             </Link>
           </BioFooter>
         </WrapperLogo>
@@ -122,21 +122,26 @@ const WrapperLogo = styled.div`
 const Instagram = styled.div`
   margin-top: 20px;
   margin-right: 10px;
-
+  width: 40px;
+  height: 40px;
   img {
-    width: 45px;
-    object-fit: contain;
-    image-rendering: -moz-crisp-edges; /* Firefox */
-    image-rendering: -o-crisp-edges; /* Opera */
-    image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming) */
-    image-rendering: crisp-edges;
-    -ms-interpolation-mode: nearest-neighbor; /* IE (non-standard property) */
+    width: 100%;
+    height: 100%;
   }
 `;
 
-const BioFooter = styled(Instagram)`
+const BioFooter = styled.div`
+  margin-top: 20px;
   margin-left: 10px;
-  cursor: pointer;
+
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 `;
 const Container = styled.div``;
 const Header = styled.div`
