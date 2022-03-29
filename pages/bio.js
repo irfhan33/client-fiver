@@ -30,16 +30,16 @@ export default function Epk() {
           <Avatar>
             <AvatarLeft>
               <a
-                href="/images/HNRY_ST_Bio_Profile.jpg"
+                href="../images/HNRY_ST_Bio_Profile.jpg"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src="/images/HNRY_ST_Bio_Profile.jpg" alt="" />
+                <img src="../images/HNRY_ST_Bio_Profile.jpg" alt="" />
               </a>
             </AvatarLeft>
             <AvatarRight>
               <Link href="/bio">
-                <img src="/images/bio.svg" alt="" />
+                <img src="../images/bio.svg" alt="" />
               </Link>
             </AvatarRight>
           </Avatar>
@@ -159,7 +159,7 @@ export default function Epk() {
 const Container = styled.div`
   @font-face {
     font-family: "Release Date";
-    src: url("/Neue\ Plak\ Black.ttf") format("truetype");
+    src: url("../Neue\ Plak\ Black.ttf") format("truetype");
     font-weight: bold;
   }
 `;
@@ -178,7 +178,7 @@ const Main = styled.div`
   }
   &:before {
     content: "";
-    background: url("images/hero_background.jpg");
+    background: url("../images/hero_background.jpg");
     background-position: top;
     left: 0;
     right: 0;

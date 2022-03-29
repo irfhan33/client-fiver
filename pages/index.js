@@ -104,7 +104,7 @@ export default function Home() {
           </Instagram>
           <BioFooter>
             <Link href="bio">
-              <img src="images/bio_footer.svg" alt="" />
+              <img src="images/bio_footer_large.svg" alt="" />
             </Link>
           </BioFooter>
         </WrapperLogo>

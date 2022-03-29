@@ -119,7 +119,7 @@ export default Dlp;
 const Container = styled.div`
   @font-face {
     font-family: "Release Date";
-    src: url("/Neue\ Plak\ Black.ttf") format("truetype");
+    src: url("../Neue\ Plak\ Black.ttf") format("truetype");
     font-weight: bold;
   }
 `;
@@ -129,7 +129,7 @@ const Content = styled.div`
   z-index: 99;
   &:before {
     content: "";
-    background: url("images/hero_background.jpg");
+    background: url("../images/hero_background.jpg");
     background-position: bottom;
     left: 0;
     right: 0;
