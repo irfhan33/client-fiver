@@ -22,7 +22,7 @@ const Header = styled.div`
   height: 80px;
   padding: 20px 50px;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   @media (max-width: 768px) {
     /* justify-content: space-between; */
     padding: 20px 14vw;
@@ -30,13 +30,15 @@ const Header = styled.div`
 `;
 
 const LogoLeft = styled.div`
-  /* display: flex; */
+  flex: 1;
+  width: auto !important;
   max-height: 40px;
   /* width: 100%; */
   /* justify-content: flex-start; */
   img {
     /* width: 100%; */
     height: 100%;
+    width: auto;
   }
 
   @media (max-width: 768px) {
@@ -46,13 +48,18 @@ const LogoLeft = styled.div`
 `;
 const LogoRight = styled.div`
   max-height: 40px;
+  flex: 1;
   /* width: 100%; */
   /* justify-content: flex-end; */
-
+  position: relative;
   img {
     height: 100%;
+    width: auto;
+    margin-left: 100%;
     /* margin-left: auto; */
-    /* display: block; */
+    display: block;
+    position: absolute;
+    right: 0;
   }
 
   @media (max-width: 768px) {
