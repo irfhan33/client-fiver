@@ -133,7 +133,7 @@ const Instagram = styled.div`
 const BioFooter = styled.div`
   margin-top: 20px;
   margin-left: 10px;
-
+  cursor: pointer;
   margin-right: 10px;
   width: 40px;
   height: 40px;
