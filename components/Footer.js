@@ -16,12 +16,12 @@ function Footer({ bio }) {
             rel="noopener noreferrer"
             href="https://www.instagram.com/hnryst_mzk/"
           >
-            <img src="/instagram.svg" alt="" />
+            <img src="../instagram.svg" alt="" />
           </a>
         </Instagram>
         <BioFooter>
           <Link href="bio">
-            <img src="images/test.png" alt="" />
+            <img src="../images/test.png" alt="" />
           </Link>
         </BioFooter>
       </WrapperLogo>

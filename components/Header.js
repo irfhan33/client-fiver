@@ -31,14 +31,18 @@ const Header = styled.div`
 
 const LogoLeft = styled.div`
   flex: 1;
-  width: auto !important;
   max-height: 40px;
+  position: relative;
   /* width: 100%; */
   /* justify-content: flex-start; */
   img {
     /* width: 100%; */
     height: 100%;
     width: auto;
+    margin-right: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
   }
 
   @media (max-width: 768px) {
