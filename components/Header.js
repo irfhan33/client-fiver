@@ -22,10 +22,17 @@ const Header = styled.div`
   height: 80px;
   padding: 20px 50px;
   display: flex;
-  /* justify-content: space-between; */
-  @media (max-width: 768px) {
-    /* justify-content: space-between; */
+
+  /* @media (max-width: 768px) {
     padding: 20px 14vw;
+  } */
+
+  @media (max-width: 768px) {
+    padding: 20px 40px;
+  }
+
+  @media (max-width: 426px) {
+    padding: 20px 18px;
   }
 `;
 
