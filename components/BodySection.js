@@ -12,9 +12,11 @@ function BodySection({ image, title, destination }) {
         </Link>
       </MoreImage>
       <Link href={destination}>
-        <TitleMore>
-          <span>{title}</span>
-        </TitleMore>
+        <TitleMoreWrapper>
+          <TitleMore>
+            <span>{title}</span>
+          </TitleMore>
+        </TitleMoreWrapper>
       </Link>
       <Listen>LISTEN NOW</Listen>
     </Container>
@@ -72,11 +74,14 @@ const MoreImage = styled.div`
 const TitleMore = styled.div`
   font-family: "Release Date";
   font-size: 65px;
-  line-height: 65px;
+  line-height: 55px;
   cursor: pointer;
+  justify-content: center;
   display: flex;
   flex-direction: column;
   text-align: center;
+  align-items: center;
+  margin-top: -10px;
   @media (max-width: 420px) {
     font-size: 16vw;
   }
@@ -92,4 +97,11 @@ const Listen = styled.div`
   @media (max-width: 420px) {
     font-size: 8vw;
   }
+`;
+
+const TitleMoreWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
 `;
