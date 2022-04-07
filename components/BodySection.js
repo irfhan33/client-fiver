@@ -38,6 +38,7 @@ const Container = styled.div`
 
   @media (max-width: 768px) {
     padding: 0 14vw;
+    margin-top: -40px;
   }
 
   /* .title-more:first-letter {

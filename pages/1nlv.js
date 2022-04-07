@@ -342,10 +342,16 @@ const IconItem = styled.div`
   @media (max-width: 768px) {
     flex: unset;
   }
+
   &:hover {
     background: white;
     border: transparent;
+
+    img {
+      filter: invert(0%);
+    }
   }
+
   img {
     width: 100%;
     height: 100%;
@@ -353,9 +359,9 @@ const IconItem = styled.div`
     transition: all 250ms;
     filter: invert(100%);
 
-    &:hover {
+    /* &:hover {
       filter: invert(0);
-    }
+    } */
   }
 `;
 
