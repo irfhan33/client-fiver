@@ -5,11 +5,11 @@ import FooterCr from "../components/FooterCr";
 // import Footer from "./../components/Footer";
 import BodySection from "./../components/BodySection";
 
-export default function Home() {
+export default function NLV() {
   return (
     <Container>
       <Head>
-        <title>HNRY ST - Streaming Now</title>
+        <title>1NLV - HNRY ST</title>
         <link rel="icon" href="favicon.ico" />
       </Head>
 
@@ -32,9 +32,9 @@ export default function Home() {
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href="images/TKMYHRT_Cover_Artwork_v6.jpg"
+                href="images/1NLV_Cover_Artwork_800.jpg"
               >
-                <img src="images/TKMYHRT_Cover_Artwork_v6.jpg" alt="" />
+                <img src="images/1NLV_Cover_Artwork_800.jpg" alt="" />
               </a>
             </Thumbnail>
           </Left>
@@ -42,7 +42,7 @@ export default function Home() {
           {/* Links */}
           <Right>
             <LogoOne>
-              <img src="images/TKMYHRT_BIG.svg" alt="" />
+              <img src="images/1NLV_BIG.svg" alt="" />
             </LogoOne>
             <LogoTwo>
               <img src="images/listennow.svg" alt="" />
@@ -100,9 +100,9 @@ export default function Home() {
       </Main>
 
       <BodySection
-        image="images/1NLV_Cover_Artwork_800.jpg"
-        title="1NLV"
-        destination="/1nlv"
+        image="images/TKMYHRT_Cover_Artwork_v6.jpg"
+        title="TKMYHRT"
+        destination="/"
       />
       {/* Footer */}
       <Footer>
@@ -278,10 +278,7 @@ const Thumbnail = styled.div`
   }
 `;
 const LogoOne = styled.div`
-  /* width: 50%; */
-  max-height: 120px;
-  min-height: 120px;
-
+  width: 50%;
   img {
     width: 100%;
     height: 100%;

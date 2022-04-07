@@ -309,55 +309,6 @@ const Lyric = styled.img`
   transform: translate(calc(-100% - 20px), 500px); */
 `;
 
-const LyricButton = styled.div`
-  margin-left: 10px;
-  margin-bottom: 14px;
-  background: red;
-  width: 40px;
-  height: 40px;
-  display: block;
-  cursor: pointer;
-
-  img {
-    width: 40px;
-    height: 40px;
-  }
-`;
-
-const Header = styled.div`
-  display: flex;
-  padding: 30px 76px;
-  justify-content: space-between;
-  @media (max-width: 768px) {
-    padding: 30px 8vw;
-  }
-  @media (max-width: 426px) {
-    padding: 30px 10vw;
-  }
-`;
-const LogoLeft = styled.div`
-  display: flex;
-  height: 40px;
-
-  @media (max-width: 426px) {
-    height: 34px;
-  }
-  img {
-    height: 100%;
-  }
-`;
-const LogoRight = styled.div`
-  display: flex;
-  height: 40px;
-
-  @media (max-width: 426px) {
-    height: 34px;
-  }
-
-  img {
-    height: 100%;
-  }
-`;
 const Thumbnail = styled.div`
   display: flex;
   padding: 10px 76px;
@@ -395,31 +346,6 @@ const Wrapper = styled.div`
   z-index: 1;
   @media (max-width: 768px) {
     max-width: 280px;
-  }
-`;
-
-const ReleaseDate = styled.div`
-  display: flex;
-  justify-content: center;
-  z-index: 10;
-  background: gray;
-  padding: 50px 50px;
-
-  @media (max-width: 426px) {
-    padding: 50px 32px;
-  }
-  img {
-    width: 100%;
-    height: 100%;
-    max-width: 450px;
-
-    @media (max-width: 768px) {
-      max-width: 600px;
-    }
-
-    @media (max-width: 426px) {
-      max-width: 300px;
-    }
   }
 `;
 
