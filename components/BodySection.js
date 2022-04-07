@@ -12,8 +12,8 @@ function BodySection({ image, title, destination }) {
         </Link>
       </MoreImage>
       <Link href={destination}>
-        <TitleMore nlv={title === "1NLV" ? true : false} className="title-more">
-          {title}
+        <TitleMore>
+          <span>{title}</span>
         </TitleMore>
       </Link>
       <Listen>LISTEN NOW</Listen>
@@ -51,9 +51,8 @@ const More = styled.div`
   flex-direction: column;
   text-align: center;
   font-size: 32px;
-  margin-bottom: 10px;
   white-space: nowrap;
-
+  margin-bottom: 10px;
   @media (max-width: 360px) {
     font-size: 8vw;
   }
@@ -62,19 +61,22 @@ const MoreImage = styled.div`
   width: 100%;
   max-width: 300px;
   cursor: pointer;
+
   img {
     width: 100%;
     height: 100%;
     object-fit: contain;
   }
-
-  margin-bottom: -10px;
 `;
+
 const TitleMore = styled.div`
   font-family: "Release Date";
   font-size: 65px;
-  margin-bottom: -10px;
+  line-height: 65px;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
   @media (max-width: 420px) {
     font-size: 16vw;
   }
