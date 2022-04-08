@@ -101,7 +101,7 @@ export default function NLV() {
 
       <BodySection
         image="images/TKMYHRT_Cover_Artwork_v6.jpg"
-        title="TKMYHRT"
+        titleImage="images/TKMYHRT_BIG.svg"
         destination="/"
       />
       {/* Footer */}

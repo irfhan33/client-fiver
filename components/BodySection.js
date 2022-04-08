@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Link from "next/link";
 
-function BodySection({ image, title, destination }) {
+function BodySection({ image, titleImage, destination }) {
   return (
     <Container>
       <More>MORE BY HNRY ST</More>
@@ -14,7 +14,7 @@ function BodySection({ image, title, destination }) {
       <Link href={destination}>
         <TitleMoreWrapper>
           <TitleMore>
-            <span>{title}</span>
+            <img src={titleImage} alt="" />
           </TitleMore>
         </TitleMoreWrapper>
       </Link>
@@ -72,18 +72,14 @@ const MoreImage = styled.div`
 `;
 
 const TitleMore = styled.div`
-  font-family: "Release Date";
-  font-size: 65px;
-  line-height: 55px;
-  cursor: pointer;
-  justify-content: center;
   display: flex;
-  flex-direction: column;
-  text-align: center;
+  justify-content: center;
   align-items: center;
-  margin-top: -10px;
-  @media (max-width: 420px) {
-    font-size: 16vw;
+  height: 50px;
+  /* width: 300px; */
+  img {
+    height: 100%;
+    width: auto;
   }
 `;
 

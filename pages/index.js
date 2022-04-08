@@ -101,7 +101,7 @@ export default function Home() {
 
       <BodySection
         image="images/1NLV_Cover_Artwork_800.jpg"
-        title="1NLV"
+        titleImage="images/1NLV_BIG.svg"
         destination="/1nlv"
       />
       {/* Footer */}
