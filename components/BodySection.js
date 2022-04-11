@@ -70,7 +70,7 @@ const MoreImage = styled.div`
 
 const TitleMore = styled.div`
   display: flex;
-  max-width: 300px;
+  max-width: 280px;
   height: 50px;
   margin-bottom: 16px;
   img {
@@ -80,6 +80,7 @@ const TitleMore = styled.div`
 `;
 
 const Listen = styled.div`
+  max-width: 200px;
   img {
     width: 100%;
     height: 100%;

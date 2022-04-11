@@ -129,6 +129,7 @@ export default function NLV() {
     </Container>
   );
 }
+
 const WrapperLogo = styled.div`
   display: flex;
   align-items: center;
@@ -171,42 +172,54 @@ const Header = styled.div`
   height: 80px;
   padding: 20px 50px;
   display: flex;
-  justify-content: center;
+  /* @media (max-width: 768px) {
+  padding: 20px 14vw;
+} */
   @media (max-width: 768px) {
-    padding: 20px 14vw;
+    padding: 20px 40px;
+  }
+
+  @media (max-width: 426px) {
+    padding: 20px 18px;
   }
 `;
 
 const LogoLeft = styled.div`
-  display: flex;
+  flex: 1;
   max-height: 40px;
-  width: 100%;
-  justify-content: center;
+  position: relative;
+
   img {
     height: 100%;
+    margin: 0 auto;
+    display: flex;
   }
 
   @media (max-width: 768px) {
-    justify-content: flex-start;
-
     max-height: 28px;
+
+    img {
+      margin: 0;
+      position: absolute;
+      left: 0;
+    }
   }
 `;
 const LogoRight = styled.div`
-  display: none;
   max-height: 40px;
-  width: 100%;
-  justify-content: flex-end;
-  align-items: flex-end;
-  @media (max-width: 768px) {
-    margin-left: auto;
-    display: flex;
-    max-height: 28px;
-  }
-
+  flex: 1;
+  position: relative;
+  display: none;
   img {
     height: 100%;
-    margin-left: auto;
+    margin-left: 100%;
+    display: block;
+    position: absolute;
+    right: 0;
+  }
+
+  @media (max-width: 768px) {
+    max-height: 28px;
     display: block;
   }
 `;
@@ -245,6 +258,7 @@ const Content = styled.div`
   @media (max-width: 768px) {
     flex-direction: column;
     padding: 20px 14vw;
+    padding-bottom: 0;
   }
 `;
 
@@ -278,10 +292,13 @@ const Thumbnail = styled.div`
   }
 `;
 const LogoOne = styled.div`
-  width: 50%;
+  /* width: 50%; */
+  height: 120px !important;
+
   img {
-    width: 100%;
     height: 100%;
+    width: 100%;
+    object-fit: contain;
   }
 
   @media (max-width: 768px) {
@@ -342,16 +359,10 @@ const IconItem = styled.div`
   @media (max-width: 768px) {
     flex: unset;
   }
-
   &:hover {
     background: white;
     border: transparent;
-
-    img {
-      filter: invert(0%);
-    }
   }
-
   img {
     width: 100%;
     height: 100%;
@@ -359,9 +370,9 @@ const IconItem = styled.div`
     transition: all 250ms;
     filter: invert(100%);
 
-    /* &:hover {
+    &:hover {
       filter: invert(0);
-    } */
+    }
   }
 `;
 
@@ -370,10 +381,8 @@ const Buttons = styled.div`
   flex-wrap: wrap;
   text-align: center;
   justify-content: center;
-  /* gap: 20px; */
   cursor: pointer;
   @media (max-width: 768px) {
-    padding: 18px;
-    padding-top: 0;
+    padding: 0 18px;
   }
 `;
