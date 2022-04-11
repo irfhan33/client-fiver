@@ -81,6 +81,7 @@ const TitleMore = styled.div`
 
 const Listen = styled.div`
   max-width: 200px;
+  height: 27px;
   img {
     width: 100%;
     height: 100%;
