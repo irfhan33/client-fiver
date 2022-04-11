@@ -5,20 +5,22 @@ import Link from "next/link";
 function BodySection({ image, titleImage, destination }) {
   return (
     <Container>
-      <More>MORE BY HNRY ST</More>
+      <More>
+        <img src="../images/more.svg" alt="" />
+      </More>
       <MoreImage>
         <Link href={destination}>
           <img src={image} alt="" />
         </Link>
       </MoreImage>
       <Link href={destination}>
-        <TitleMoreWrapper>
-          <TitleMore>
-            <img src={titleImage} alt="" />
-          </TitleMore>
-        </TitleMoreWrapper>
+        <TitleMore>
+          <img src={titleImage} alt="" />
+        </TitleMore>
       </Link>
-      <Listen>LISTEN NOW</Listen>
+      <Listen>
+        <img src="../images/listennow.svg" alt="" />
+      </Listen>
     </Container>
   );
 }
@@ -40,64 +42,46 @@ const Container = styled.div`
 
   @media (max-width: 768px) {
     padding: 0 14vw;
-    margin-top: -40px;
+    /* margin-top: -40px; */
   }
-
-  /* .title-more:first-letter {
-    color: red !important;
-  } */
 `;
 const More = styled.div`
-  font-family: "Release Date";
+  margin-top: 8px;
+  max-width: 280px;
   display: flex;
-  flex-direction: column;
-  text-align: center;
-  font-size: 32px;
-  white-space: nowrap;
-  margin-bottom: 10px;
-  @media (max-width: 360px) {
-    font-size: 8vw;
+  margin-bottom: 16px;
+  img {
+    width: 100%;
+    height: 100%;
   }
 `;
 const MoreImage = styled.div`
   width: 100%;
   max-width: 300px;
+  max-height: 300px;
   cursor: pointer;
-
+  margin-bottom: 16px;
   img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: fill;
   }
 `;
 
 const TitleMore = styled.div`
   display: flex;
-  justify-content: center;
-  align-items: center;
+  max-width: 300px;
   height: 50px;
-  /* width: 300px; */
+  margin-bottom: 16px;
   img {
     height: 100%;
-    width: auto;
+    width: 100%;
   }
 `;
 
 const Listen = styled.div`
-  font-family: "Release Date";
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  font-size: 33px;
-
-  @media (max-width: 420px) {
-    font-size: 8vw;
+  img {
+    width: 100%;
+    height: 100%;
   }
-`;
-
-const TitleMoreWrapper = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 10px;
 `;
