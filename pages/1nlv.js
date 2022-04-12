@@ -16,10 +16,10 @@ export default function NLV() {
       {/* Header */}
       <Header>
         <LogoLeft>
-          <img src="images/hnry_st_logo.svg" alt="" />
+          <img src="../images/hnry_st_logo.svg" alt="" />
         </LogoLeft>
         <LogoRight>
-          <img src="images/1NLV_BIG.svg" alt="" />
+          <img src="../images/1NLV_BIG.svg" alt="" />
         </LogoRight>
       </Header>
 
@@ -32,9 +32,9 @@ export default function NLV() {
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href="images/1NLV_Cover_Artwork_800.jpg"
+                href="../images/1NLV_Cover_Artwork_800.jpg"
               >
-                <img src="images/1NLV_Cover_Artwork_800.jpg" alt="" />
+                <img src="../images/1NLV_Cover_Artwork_800.jpg" alt="" />
               </a>
             </Thumbnail>
           </Left>
@@ -42,10 +42,10 @@ export default function NLV() {
           {/* Links */}
           <Right>
             <LogoOne>
-              <img src="images/1NLV_BIG.svg" alt="" />
+              <img src="../images/1NLV_BIG.svg" alt="" />
             </LogoOne>
             <LogoTwo>
-              <img src="images/listennow.svg" alt="" />
+              <img src="../images/listennow.svg" alt="" />
             </LogoTwo>
             <Buttons>
               <IconItem>
@@ -54,7 +54,7 @@ export default function NLV() {
                   rel="noopener noreferrer"
                   href="https://open.spotify.com/track/687mUHJYFyCngYReM7ErFM?si=ffe40bd641964032"
                 >
-                  <img src="images/logo/spotify.svg" alt="" />
+                  <img src="../images/logo/spotify.svg" alt="" />
                 </a>
               </IconItem>
               <IconItem>
@@ -63,7 +63,7 @@ export default function NLV() {
                   rel="noopener noreferrer"
                   href="https://music.apple.com/au/album/1nlv/1611882689?i=1611882690"
                 >
-                  <img src="images/logo/apple.svg" alt="" />
+                  <img src="../images/logo/apple.svg" alt="" />
                 </a>
               </IconItem>
 
@@ -73,7 +73,7 @@ export default function NLV() {
                   rel="noopener noreferrer"
                   href="https://music.amazon.com.au/albums/B09TH1FMS7?do=play&trackAsin=B09TH3NB6N&ref=dm_sh_cQRV9wgYktBn3dbPGXuU1IEhd"
                 >
-                  <img src="images/logo/amazon.svg" alt="" />
+                  <img src="../images/logo/amazon.svg" alt="" />
                 </a>
               </IconItem>
               <IconItem>
@@ -82,7 +82,7 @@ export default function NLV() {
                   rel="noopener noreferrer"
                   href="https://deezer.page.link/BgDE9CRy3k9gQFSw6"
                 >
-                  <img src="images/logo/deejar.svg" alt="" />
+                  <img src="../images/logo/deejar.svg" alt="" />
                 </a>
               </IconItem>
               <IconItem>
@@ -91,7 +91,7 @@ export default function NLV() {
                   rel="noopener noreferrer"
                   href="https://tidal.com/track/218398797"
                 >
-                  <img src="images/logo/tinder.svg" alt="" />
+                  <img src="../images/logo/tinder.svg" alt="" />
                 </a>
               </IconItem>
             </Buttons>
@@ -100,8 +100,8 @@ export default function NLV() {
       </Main>
 
       <BodySection
-        image="images/TKMYHRT_Cover_Artwork_v6.jpg"
-        titleImage="images/TKMYHRT_BIG.svg"
+        image="../images/TKMYHRT_Cover_Artwork_v6.jpg"
+        titleImage="../images/TKMYHRT_BIG.svg"
         destination="/"
       />
       {/* Footer */}
@@ -114,12 +114,12 @@ export default function NLV() {
               rel="noopener noreferrer"
               href="https://www.instagram.com/hnryst_mzk/"
             >
-              <img src="instagram.svg" alt="" />
+              <img src="../instagram.svg" alt="" />
             </a>
           </Instagram>
           <BioFooter>
             <Link href="bio">
-              <img src="images/test.png" alt="" />
+              <img src="../images/test.png" alt="" />
             </Link>
           </BioFooter>
         </WrapperLogo>
@@ -229,7 +229,7 @@ const Main = styled.div`
 
   &:before {
     content: "";
-    background: url("images/hero_background.jpg");
+    background: url("../images/hero_background.jpg");
     background-position: bottom;
     left: 0;
     right: 0;
