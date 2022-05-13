@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
 import styled from "styled-components";
+import Buttons from "../components/Buttons";
 import FooterCr from "../components/FooterCr";
 // import Footer from "./../components/Footer";
 import BodySection from "./../components/BodySection";
@@ -16,7 +17,9 @@ export default function NLV() {
       {/* Header */}
       <Header>
         <LogoLeft>
-          <img src="../images/hnry_st_logo.svg" alt="" />
+          <Link href="/">
+            <img src="../images/hnry_st_logo.svg" alt="" />
+          </Link>
         </LogoLeft>
         <LogoRight>
           <img src="../images/1NLV_BIG.svg" alt="" />
@@ -29,13 +32,7 @@ export default function NLV() {
           {/* Thumbnail */}
           <Left>
             <Thumbnail>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="../images/1NLV_Cover_Artwork_800.jpg"
-              >
-                <img src="../images/1NLV_Cover_Artwork_800.jpg" alt="" />
-              </a>
+              <img src="../images/1NLV_Cover_Artwork_800.jpg" alt="" />
             </Thumbnail>
           </Left>
 
@@ -47,62 +44,18 @@ export default function NLV() {
             <LogoTwo>
               <img src="../images/listennow.svg" alt="" />
             </LogoTwo>
-            <Buttons>
-              <IconItem>
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://open.spotify.com/track/687mUHJYFyCngYReM7ErFM?si=ffe40bd641964032"
-                >
-                  <img src="../images/logo/spotify.svg" alt="" />
-                </a>
-              </IconItem>
-              <IconItem>
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://music.apple.com/au/album/1nlv/1611882689?i=1611882690"
-                >
-                  <img src="../images/logo/apple.svg" alt="" />
-                </a>
-              </IconItem>
-
-              <IconItem>
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://music.amazon.com.au/albums/B09TH1FMS7?do=play&trackAsin=B09TH3NB6N&ref=dm_sh_cQRV9wgYktBn3dbPGXuU1IEhd"
-                >
-                  <img src="../images/logo/amazon.svg" alt="" />
-                </a>
-              </IconItem>
-              <IconItem>
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://deezer.page.link/BgDE9CRy3k9gQFSw6"
-                >
-                  <img src="../images/logo/deejar.svg" alt="" />
-                </a>
-              </IconItem>
-              <IconItem>
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://tidal.com/track/218398797"
-                >
-                  <img src="../images/logo/tinder.svg" alt="" />
-                </a>
-              </IconItem>
-            </Buttons>
+            <Buttons />
           </Right>
         </Content>
       </Main>
 
       <BodySection
-        image="../images/TKMYHRT_Cover_Artwork_v6.jpg"
-        titleImage="../images/TKMYHRT_BIG.svg"
-        destination="/"
+        image1="../images/dnt-cover.png"
+        titleImage1="../images/dnt.svg"
+        destination1="/"
+        image2="../images/TKMYHRT_Cover_Artwork_v6.jpg"
+        titleImage2="../images/TKMYHRT_BIG.svg"
+        destination2="/tkmyhrt"
       />
       {/* Footer */}
       <Footer>
@@ -188,6 +141,7 @@ const LogoLeft = styled.div`
   flex: 1;
   max-height: 40px;
   position: relative;
+  cursor: pointer;
 
   img {
     height: 100%;
@@ -339,50 +293,5 @@ const Footer = styled.div`
   @media (max-width: 768px) {
     padding: unset;
     margin-top: 20px;
-  }
-`;
-
-const IconItem = styled.div`
-  overflow: hidden;
-  transition: all 250ms;
-  border: 2px solid white;
-  border-radius: 4px;
-  text-align: center;
-  justify-content: center;
-  flex: 0 0 calc(30%);
-  justify-content: center;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  margin: 8px;
-
-  @media (max-width: 768px) {
-    flex: unset;
-  }
-  &:hover {
-    background: white;
-    border: transparent;
-  }
-  img {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    transition: all 250ms;
-    filter: invert(100%);
-
-    &:hover {
-      filter: invert(0);
-    }
-  }
-`;
-
-const Buttons = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  text-align: center;
-  justify-content: center;
-  cursor: pointer;
-  @media (max-width: 768px) {
-    padding: 0 18px;
   }
 `;

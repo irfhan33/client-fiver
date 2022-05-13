@@ -2,25 +2,51 @@ import React from "react";
 import styled from "styled-components";
 import Link from "next/link";
 
-function BodySection({ image, titleImage, destination }) {
+function BodySection({
+  image1,
+  titleImage1,
+  destination1,
+  image2,
+  titleImage2,
+  destination2,
+}) {
   return (
     <Container>
       <More>
-        <img src="../images/more.svg" alt="" />
+        <img src="images/more.svg" alt="" />
       </More>
-      <MoreImage>
-        <Link href={destination}>
-          <img src={image} alt="" />
-        </Link>
-      </MoreImage>
-      <Link href={destination}>
-        <TitleMore>
-          <img src={titleImage} alt="" />
-        </TitleMore>
-      </Link>
-      <Listen>
-        <img src="../images/listennow.svg" alt="" />
-      </Listen>
+      <Wrapper>
+        <Album>
+          <MoreImage>
+            <Link href={destination1}>
+              <img src={image1} alt="" />
+            </Link>
+          </MoreImage>
+          <Link href={destination1}>
+            <TitleMore>
+              <img src={titleImage1} alt="" />
+            </TitleMore>
+          </Link>
+          <Listen>
+            <img src="images/listennow.svg" alt="" />
+          </Listen>
+        </Album>
+        <Album>
+          <MoreImage>
+            <Link href={destination2}>
+              <img src={image2} alt="" />
+            </Link>
+          </MoreImage>
+          <Link href={destination2}>
+            <TitleMore>
+              <img src={titleImage2} alt="" />
+            </TitleMore>
+          </Link>
+          <Listen>
+            <img src="images/listennow.svg" alt="" />
+          </Listen>
+        </Album>
+      </Wrapper>
     </Container>
   );
 }
@@ -61,6 +87,8 @@ const MoreImage = styled.div`
   max-height: 300px;
   cursor: pointer;
   margin-bottom: 16px;
+  min-height: 300px;
+
   img {
     width: 100%;
     height: 100%;
@@ -82,8 +110,25 @@ const TitleMore = styled.div`
 const Listen = styled.div`
   max-width: 200px;
   height: 27px;
+  display: flex;
+
   img {
     width: 100%;
     height: 100%;
+  }
+`;
+
+const Album = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+const Wrapper = styled.div`
+  display: flex;
+  gap: 30px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
   }
 `;
