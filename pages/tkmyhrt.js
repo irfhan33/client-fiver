@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <Container>
       <Head>
-        <title>HNRY ST - Streaming Now</title>
+        <title>TKMYHRT - HNRY ST</title>
         <link rel="icon" href="favicon.ico" />
       </Head>
 
