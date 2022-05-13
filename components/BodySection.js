@@ -83,12 +83,10 @@ const More = styled.div`
 `;
 const MoreImage = styled.div`
   width: 100%;
-  max-width: 300px;
-  max-height: 300px;
   cursor: pointer;
   margin-bottom: 16px;
-  min-height: 300px;
-
+  aspect-ratio: 1;
+  max-width: 300px;
   img {
     width: 100%;
     height: 100%;
