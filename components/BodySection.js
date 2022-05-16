@@ -87,6 +87,7 @@ const MoreImage = styled.div`
   margin-bottom: 16px;
   aspect-ratio: 1;
   max-width: 300px;
+
   img {
     width: 100%;
     height: 100%;
@@ -123,10 +124,11 @@ const Album = styled.div`
 `;
 
 const Wrapper = styled.div`
-  display: flex;
-  gap: 30px;
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 
   @media (max-width: 768px) {
-    flex-direction: column;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 `;

@@ -234,9 +234,9 @@ const Thumbnail = styled.div`
   margin-top: 14px;
   img {
     width: 85%;
-    height: 100%;
+    /* height: 100%; */
     box-shadow: 57px 52px 124px rgba(0, 0, 0, 0.77);
-
+    aspect-ratio: 1;
     @media (max-width: 768px) {
       width: 100%;
     }
