@@ -85,13 +85,14 @@ const MoreImage = styled.div`
   width: 100%;
   cursor: pointer;
   margin-bottom: 16px;
-  aspect-ratio: 1;
+  aspect-ratio: 1/1;
   max-width: 300px;
+  overflow: hidden;
 
   img {
     width: 100%;
     height: 100%;
-    object-fit: fill;
+    object-fit: cover;
   }
 `;
 
