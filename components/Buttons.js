@@ -8,7 +8,7 @@ function Buttons() {
         <a
           target="_blank"
           rel="noopener noreferrer"
-          href="https://open.spotify.com/track/6YAJsx5OV3Oho22qRGaGAl?si=NxO1UGR7TEi8nYJbyC0lVg"
+          href="https://open.spotify.com/track/12ydgoE7GNRn2U9bq0miqa?si=52fYFRNlQOaSFVz-8TmwvA"
         >
           <img src="../images/logo/spotify.svg" alt="" />
         </a>
@@ -17,7 +17,7 @@ function Buttons() {
         <a
           target="_blank"
           rel="noopener noreferrer"
-          href="https://music.apple.com/au/album/tkmyhrt/1614092711?i=1614092712"
+          href="https://music.apple.com/au/album/dnt-feat-dorah/1617824114?i=1617824115"
         >
           <img src="../images/logo/apple.svg" alt="" />
         </a>
@@ -27,7 +27,7 @@ function Buttons() {
         <a
           target="_blank"
           rel="noopener noreferrer"
-          href="https://music.amazon.com.au/albums/B09VF56JNB?do=play&trackAsin=B09VF2LYK3&ref=dm_sh_2XaLW0wQ2nEg76RA969MoAcKn"
+          href="https://music.amazon.com.au/albums/B09X7CS14V?do=play&trackAsin=B09X7CDQ4G&ref=dm_sh_rhUtrXXQJXAillgrFBgLjtb6w"
         >
           <img src="../images/logo/amazon.svg" alt="" />
         </a>
@@ -36,7 +36,7 @@ function Buttons() {
         <a
           target="_blank"
           rel="noopener noreferrer"
-          href="https://deezer.page.link/SF6SboYVGSvHhCnh6"
+          href="https://deezer.page.link/P1ARZx2d3Qu2qNES9"
         >
           <img src="../images/logo/deejar.svg" alt="" />
         </a>
@@ -45,7 +45,7 @@ function Buttons() {
         <a
           target="_blank"
           rel="noopener noreferrer"
-          href="https://tidal.com/album/220556832"
+          href="https://tidal.com/track/223792541"
         >
           <img src="../images/logo/tinder.svg" alt="" />
         </a>

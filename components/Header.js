@@ -60,21 +60,17 @@ const LogoLeft = styled.div`
 const LogoRight = styled.div`
   max-height: 40px;
   flex: 1;
-  /* width: 100%; */
-  /* justify-content: flex-end; */
   position: relative;
   img {
     height: 100%;
     width: auto;
     margin-left: 100%;
-    /* margin-left: auto; */
     display: block;
     position: absolute;
     right: 0;
   }
 
   @media (max-width: 768px) {
-    /* margin-left: auto; */
     max-height: 28px;
   }
 `;

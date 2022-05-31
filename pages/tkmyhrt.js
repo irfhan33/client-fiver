@@ -21,7 +21,7 @@ export default function Home() {
           </Link>
         </LogoLeft>
         <LogoRight>
-          <img src="../images/TKMYHRT_BIG.svg" alt="" />
+          <img src="../images/menu-icon.svg" alt="" />
         </LogoRight>
       </Header>
 
@@ -50,7 +50,7 @@ export default function Home() {
 
       <BodySection
         image1="../images/dnt-cover.png"
-        titleImage1="../images/dnt.svg"
+        titleImage1="../images/DNT.svg"
         destination1="/"
         image2="../images/1NLV_Cover_Artwork_800.jpg"
         titleImage2="../images/1NLV_BIG.svg"
@@ -161,6 +161,7 @@ const LogoRight = styled.div`
   flex: 1;
   position: relative;
   display: none;
+
   img {
     height: 100%;
     margin-left: 100%;
@@ -170,8 +171,9 @@ const LogoRight = styled.div`
   }
 
   @media (max-width: 768px) {
-    max-height: 28px;
+    max-height: 34px;
     display: block;
+    cursor: pointer;
   }
 `;
 
@@ -243,7 +245,6 @@ const Thumbnail = styled.div`
   }
 `;
 const LogoOne = styled.div`
-  /* width: 50%; */
   height: 120px !important;
 
   img {
@@ -253,7 +254,8 @@ const LogoOne = styled.div`
   }
 
   @media (max-width: 768px) {
-    display: none;
+    margin-top: 23px;
+    height: 50px !important;
   }
 `;
 const LogoTwo = styled.div`

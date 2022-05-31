@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <Container>
       <Head>
-        <title>HNRY ST - Streaming Now</title>
+        <title>HNRY ST mzk</title>
         <link rel="icon" href="favicon.ico" />
       </Head>
 
@@ -22,7 +22,7 @@ export default function Home() {
           </Link>
         </LogoLeft>
         <LogoRight>
-          <img src="images/dnt.svg" alt="" />
+          <img src="images/menu-icon.svg" alt="" />
         </LogoRight>
       </Header>
 
@@ -125,6 +125,7 @@ const Header = styled.div`
   height: 80px;
   padding: 20px 50px;
   display: flex;
+
   /* @media (max-width: 768px) {
     padding: 20px 14vw;
   } */
@@ -163,6 +164,7 @@ const LogoRight = styled.div`
   flex: 1;
   position: relative;
   display: none;
+
   img {
     height: 100%;
     margin-left: 100%;
@@ -172,8 +174,9 @@ const LogoRight = styled.div`
   }
 
   @media (max-width: 768px) {
-    max-height: 28px;
+    max-height: 34px;
     display: block;
+    cursor: pointer;
   }
 `;
 
@@ -245,7 +248,6 @@ const Thumbnail = styled.div`
   }
 `;
 const LogoOne = styled.div`
-  /* width: 50%; */
   height: 120px !important;
 
   img {
@@ -255,7 +257,8 @@ const LogoOne = styled.div`
   }
 
   @media (max-width: 768px) {
-    display: none;
+    margin-top: 23px;
+    height: 50px !important;
   }
 `;
 const LogoTwo = styled.div`
