@@ -50,9 +50,9 @@ export default function Home() {
       </Main>
 
       <BodySection
-        image1="../images/TKMYHRT_Cover_Artwork_v6.jpg"
-        titleImage1="../images/TKMYHRT_BIG.svg"
-        destination1="/tkmyhrt"
+        image1="../images/dnt-xtnd-cover.jpg"
+        titleImage1="../images/dnt-xtnd-horizontal.svg"
+        destination1="/"
         image2="../images/TKMYHRT_Cover_Artwork_v6.jpg"
         titleImage2="../images/TKMYHRT_BIG.svg"
         destination2="/tkmyhrt"

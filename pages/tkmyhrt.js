@@ -54,7 +54,7 @@ export default function Home() {
         destination1="/"
         image2="../images/dnt-cover.png"
         titleImage2="../images/DNT.svg"
-        destination2="/"
+        destination2="/dnt"
         image3="../images/1NLV_Cover_Artwork_800.jpg"
         titleImage3="../images/1NLV_BIG.svg"
         destination3="/1nlv"

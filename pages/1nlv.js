@@ -55,7 +55,7 @@ export default function NLV() {
         destination1="/"
         image2="../images/dnt-cover.png"
         titleImage2="../images/DNT.svg"
-        destination2="/"
+        destination2="/dnt"
         image3="../images/TKMYHRT_Cover_Artwork_v6.jpg"
         titleImage3="../images/TKMYHRT_BIG.svg"
         destination3="/tkmyhrt"
