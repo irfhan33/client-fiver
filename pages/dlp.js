@@ -1,17 +1,29 @@
 import React from "react";
 import styled from "styled-components";
-import Headerrr from "./../components/Header";
 import Head from "next/head";
 import Footer from "./../components/Footer";
+import Link from "next/link";
 
 function Dlp() {
   return (
     <Container>
       <Head>
-        <title>DLP - HNRY ST</title>
+        <title>HNRY ST - Direct Licensing Policy</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Headerrr image="../images/dlp.svg" />
+
+      {/* Header */}
+      <Header>
+        <LogoLeft>
+          <Link href="/">
+            <img src="../images/hnry_st_logo.svg" alt="" />
+          </Link>
+        </LogoLeft>
+        <LogoRight>
+          <img src="../images/menu-icon.svg" alt="" />
+        </LogoRight>
+      </Header>
+
       <Content>
         <Title>
           <span>HNRY ST mzk</span>
@@ -115,6 +127,66 @@ function Dlp() {
 }
 
 export default Dlp;
+
+const Header = styled.div`
+  height: 80px;
+  padding: 20px 50px;
+  display: flex;
+  align-items: center;
+  /* @media (max-width: 768px) {
+  padding: 20px 14vw;
+} */
+  @media (max-width: 768px) {
+    padding: 20px 40px;
+  }
+
+  @media (max-width: 426px) {
+    padding: 20px 18px;
+  }
+`;
+
+const LogoLeft = styled.div`
+  flex: 1;
+  height: 40px;
+  position: relative;
+  cursor: pointer;
+
+  img {
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+  }
+
+  @media (max-width: 768px) {
+    max-height: 28px;
+
+    img {
+      margin: 0;
+      position: absolute;
+      left: 0;
+    }
+  }
+`;
+const LogoRight = styled.div`
+  height: 40px;
+  flex: 1;
+  position: relative;
+  display: none;
+
+  img {
+    height: 100%;
+    margin-left: 100%;
+    display: block;
+    position: absolute;
+    right: 0;
+  }
+
+  @media (max-width: 768px) {
+    max-height: 34px;
+    display: block;
+    cursor: pointer;
+  }
+`;
 
 const Container = styled.div`
   @font-face {

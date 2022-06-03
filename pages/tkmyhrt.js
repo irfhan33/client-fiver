@@ -49,12 +49,15 @@ export default function Home() {
       </Main>
 
       <BodySection
-        image1="../images/dnt-cover.png"
-        titleImage1="../images/DNT.svg"
+        image1="../images/dnt-xtnd-cover.jpg"
+        titleImage1="../images/dnt-xtnd-horizontal.svg"
         destination1="/"
-        image2="../images/1NLV_Cover_Artwork_800.jpg"
-        titleImage2="../images/1NLV_BIG.svg"
-        destination2="/1nlv"
+        image2="../images/dnt-cover.png"
+        titleImage2="../images/DNT.svg"
+        destination2="/"
+        image3="../images/1NLV_Cover_Artwork_800.jpg"
+        titleImage3="../images/1NLV_BIG.svg"
+        destination3="/1nlv"
       />
       {/* Footer */}
       <Footer>
@@ -123,9 +126,8 @@ const Header = styled.div`
   height: 80px;
   padding: 20px 50px;
   display: flex;
-  /* @media (max-width: 768px) {
-    padding: 20px 14vw;
-  } */
+  align-items: center;
+
   @media (max-width: 768px) {
     padding: 20px 40px;
   }
@@ -137,7 +139,7 @@ const Header = styled.div`
 
 const LogoLeft = styled.div`
   flex: 1;
-  max-height: 40px;
+  height: 40px;
   position: relative;
   cursor: pointer;
   img {
@@ -157,7 +159,7 @@ const LogoLeft = styled.div`
   }
 `;
 const LogoRight = styled.div`
-  max-height: 40px;
+  height: 40px;
   flex: 1;
   position: relative;
   display: none;

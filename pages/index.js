@@ -39,7 +39,7 @@ export default function Home() {
           {/* Links */}
           <Right>
             <LogoOne>
-              <img src="images/DNT.svg" alt="" />
+              <img src="images/DNT-xtnd.svg" alt="" />
             </LogoOne>
             <LogoTwo>
               <img src="images/listennow.svg" alt="" />
@@ -50,12 +50,15 @@ export default function Home() {
       </Main>
 
       <BodySection
-        image1="images/TKMYHRT_Cover_Artwork_v6.jpg"
-        titleImage1="images/TKMYHRT_BIG.svg"
-        destination1="/tkmyhrt"
-        image2="images/1NLV_Cover_Artwork_800.jpg"
-        titleImage2="images/1NLV_BIG.svg"
-        destination2="/1nlv"
+        image1="images/dnt-cover.png"
+        titleImage1="images/DNT.svg"
+        destination1="/dnt"
+        image2="images/TKMYHRT_Cover_Artwork_v6.jpg"
+        titleImage2="images/TKMYHRT_BIG.svg"
+        destination2="/tkmyhrt"
+        image3="images/1NLV_Cover_Artwork_800.jpg"
+        titleImage3="images/1NLV_BIG.svg"
+        destination3="/1nlv"
       />
 
       {/* Footer */}
@@ -125,10 +128,8 @@ const Header = styled.div`
   height: 80px;
   padding: 20px 50px;
   display: flex;
+  align-items: center;
 
-  /* @media (max-width: 768px) {
-    padding: 20px 14vw;
-  } */
   @media (max-width: 768px) {
     padding: 20px 40px;
   }
@@ -140,9 +141,10 @@ const Header = styled.div`
 
 const LogoLeft = styled.div`
   flex: 1;
-  max-height: 40px;
+  height: 40px;
   position: relative;
   cursor: pointer;
+
   img {
     height: 100%;
     margin: 0 auto;
@@ -160,7 +162,7 @@ const LogoLeft = styled.div`
   }
 `;
 const LogoRight = styled.div`
-  max-height: 40px;
+  height: 40px;
   flex: 1;
   position: relative;
   display: none;
@@ -248,7 +250,7 @@ const Thumbnail = styled.div`
   }
 `;
 const LogoOne = styled.div`
-  height: 120px !important;
+  height: 150px !important;
 
   img {
     height: 100%;

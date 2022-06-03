@@ -9,6 +9,9 @@ function BodySection({
   image2,
   titleImage2,
   destination2,
+  image3,
+  titleImage3,
+  destination3,
 }) {
   return (
     <Container>
@@ -40,6 +43,21 @@ function BodySection({
           <Link href={destination2}>
             <TitleMore>
               <img src={titleImage2} alt="" />
+            </TitleMore>
+          </Link>
+          <Listen>
+            <img src="images/listennow.svg" alt="" />
+          </Listen>
+        </Album>
+        <Album>
+          <MoreImage>
+            <Link href={destination3}>
+              <img src={image3} alt="" />
+            </Link>
+          </MoreImage>
+          <Link href={destination3}>
+            <TitleMore>
+              <img src={titleImage3} alt="" />
             </TitleMore>
           </Link>
           <Listen>
@@ -127,7 +145,7 @@ const Album = styled.div`
 const Wrapper = styled.div`
   display: grid;
   grid-gap: 30px;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 
   @media (max-width: 768px) {
     grid-template-columns: repeat(1, minmax(0, 1fr));
