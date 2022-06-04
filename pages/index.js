@@ -32,7 +32,7 @@ export default function Home() {
           {/* Thumbnail */}
           <Left>
             <Thumbnail>
-              <img src="images/dnt-cover.png" alt="" />
+              <img src="images/dnt-xtnd-cover.jpg" alt="" />
             </Thumbnail>
           </Left>
 

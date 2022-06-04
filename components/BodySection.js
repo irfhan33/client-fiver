@@ -119,6 +119,8 @@ const TitleMore = styled.div`
   max-width: 280px;
   height: 50px;
   margin-bottom: 16px;
+  cursor: pointer;
+
   img {
     height: 100%;
     width: 100%;
@@ -129,6 +131,7 @@ const Listen = styled.div`
   max-width: 200px;
   height: 27px;
   display: flex;
+  cursor: pointer;
 
   img {
     width: 100%;
