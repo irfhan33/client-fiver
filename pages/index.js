@@ -260,7 +260,7 @@ const LogoOne = styled.div`
 
   @media (max-width: 768px) {
     margin-top: 23px;
-    height: 90px !important;
+    height: 100px !important;
   }
 `;
 const LogoTwo = styled.div`
