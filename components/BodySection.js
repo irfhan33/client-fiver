@@ -30,9 +30,11 @@ function BodySection({
               <img src={titleImage1} alt="" />
             </TitleMore>
           </Link>
-          <Listen>
-            <img src="images/listennow.svg" alt="" />
-          </Listen>
+          <Link href={destination1}>
+            <Listen>
+              <img src="images/listennow.svg" alt="" />
+            </Listen>
+          </Link>
         </Album>
         <Album>
           <MoreImage>
@@ -45,9 +47,11 @@ function BodySection({
               <img src={titleImage2} alt="" />
             </TitleMore>
           </Link>
-          <Listen>
-            <img src="images/listennow.svg" alt="" />
-          </Listen>
+          <Link href={destination2}>
+            <Listen>
+              <img src="images/listennow.svg" alt="" />
+            </Listen>
+          </Link>
         </Album>
         <Album>
           <MoreImage>
@@ -60,9 +64,11 @@ function BodySection({
               <img src={titleImage3} alt="" />
             </TitleMore>
           </Link>
-          <Listen>
-            <img src="images/listennow.svg" alt="" />
-          </Listen>
+          <Link href={destination3}>
+            <Listen>
+              <img src="images/listennow.svg" alt="" />
+            </Listen>
+          </Link>
         </Album>
       </Wrapper>
     </Container>
