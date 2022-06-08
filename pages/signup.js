@@ -24,16 +24,56 @@ export default function Epk() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Headerrr image="../images/bio_horizontal.svg" />
+      {/* Header */}
+      <Header>
+        <LogoLeft>
+          <Link href="/">
+            <img src="../images/hnry_st_logo.svg" alt="" />
+          </Link>
+        </LogoLeft>
+        <LogoRight>
+          <img src="../images/menu-icon.svg" alt="" />
+        </LogoRight>
+      </Header>
+
       <Main>
         <Content>
-          <h1>SIGN UP</h1>
+          <img src="../images/signup.svg" alt="" className="signup" />
           <img src="../images/stayup.svg" alt="" className="stayup" />
-          <div className="form-container">
-            <input type="text" placeholder="Name" />
-            <input type="text" placeholder="Email" />
-          </div>
-          <button className="button-subscribe">Subscribe</button>
+          <form
+            action="https://hnryst.us18.list-manage.com/subscribe/post?u=2b312dd30f5f08967adcaf504&amp;id=7d8fea2616"
+            method="post"
+            id="mc-embedded-subscribe-form"
+            name="mc-embedded-subscribe-form"
+            className="validate"
+            target="_blank"
+          >
+            <div className="form-container">
+              <input
+                placeholder="Name"
+                type="text"
+                name="FNAME"
+                className=""
+                id="mce-FNAME"
+              />
+              <input
+                placeholder="Email"
+                type="email"
+                name="EMAIL"
+                id="mce-EMAIL"
+              />
+            </div>
+            <button
+              className="button-subscribe"
+              type="submit"
+              value="Subscribe"
+              name="subscribe"
+              id="mc-embedded-subscribe"
+            >
+              Subscribe
+            </button>
+          </form>
+
           <img src="../images/bepart.svg" alt="" className="bepart" />
         </Content>
       </Main>
@@ -54,6 +94,7 @@ const Main = styled.div`
   position: relative;
   z-index: 1;
   min-height: 100vh;
+  padding-top: 35px;
 
   @media (max-width: 768px) {
     padding-top: 35px;
@@ -99,8 +140,12 @@ const Content = styled.div`
     padding: 0 18px;
   }
 
-  h1 {
-    font-size: 50px;
+  form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   p {
@@ -120,6 +165,7 @@ const Content = styled.div`
     max-width: 600px;
     margin-bottom: 30px;
     place-items: center;
+    justify-content: center;
   }
 
   input {
@@ -165,5 +211,72 @@ const Content = styled.div`
   .bepart {
     width: 90%;
     max-width: 860px;
+  }
+
+  .signup {
+    height: 36px;
+    margin-bottom: 40px;
+
+    @media (max-width: 768px) {
+      height: 28px;
+    }
+  }
+`;
+
+const Header = styled.div`
+  height: 80px;
+  padding: 20px 50px;
+  display: flex;
+  align-items: center;
+
+  @media (max-width: 768px) {
+    padding: 20px 40px;
+  }
+
+  @media (max-width: 426px) {
+    padding: 20px 18px;
+  }
+`;
+
+const LogoLeft = styled.div`
+  flex: 1;
+  height: 40px;
+  position: relative;
+  cursor: pointer;
+
+  img {
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+  }
+
+  @media (max-width: 768px) {
+    max-height: 28px;
+
+    img {
+      margin: 0;
+      position: absolute;
+      left: 0;
+    }
+  }
+`;
+const LogoRight = styled.div`
+  height: 40px;
+  flex: 1;
+  position: relative;
+  display: none;
+
+  img {
+    height: 100%;
+    margin-left: 100%;
+    display: block;
+    position: absolute;
+    right: 0;
+  }
+
+  @media (max-width: 768px) {
+    max-height: 34px;
+    display: block;
+    cursor: pointer;
   }
 `;
