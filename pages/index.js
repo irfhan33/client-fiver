@@ -3,7 +3,7 @@ import Link from "next/link";
 import styled from "styled-components";
 import Buttons from "../components/Buttons";
 import FooterCr from "../components/FooterCr";
-// import Footer from "./../components/Footer";
+import Footer from "./../components/Footer";
 import BodySection from "./../components/BodySection";
 
 export default function Home() {
@@ -61,60 +61,11 @@ export default function Home() {
         destination3="/1nlv"
       />
 
-      {/* Footer */}
-      <Footer>
-        <a href="mailto:mzk@hnryst.com">mzk@hnryst.com</a>
-        <WrapperLogo>
-          <Instagram>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://www.instagram.com/hnryst_mzk/"
-            >
-              <img src="instagram.svg" alt="" />
-            </a>
-          </Instagram>
-          <BioFooter>
-            <Link href="bio">
-              <img src="images/test.png" alt="" />
-            </Link>
-          </BioFooter>
-        </WrapperLogo>
-        <FooterCr home="true" />
-      </Footer>
+      <Footer />
       {/* <Footer /> */}
     </Container>
   );
 }
-const WrapperLogo = styled.div`
-  display: flex;
-  align-items: center;
-`;
-
-const Instagram = styled.div`
-  margin-top: 20px;
-  margin-right: 10px;
-  width: 40px;
-  height: 40px;
-  img {
-    width: 100%;
-    height: 100%;
-  }
-`;
-
-const BioFooter = styled.div`
-  margin-top: 20px;
-  margin-left: 10px;
-  cursor: pointer;
-  margin-right: 10px;
-  width: 40px;
-  height: 40px;
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-`;
 
 const Container = styled.div`
   @font-face {
@@ -276,26 +227,5 @@ const LogoTwo = styled.div`
     width: 60%;
     margin-top: 23px;
     margin-bottom: 21px;
-  }
-`;
-
-const Footer = styled.div`
-  display: flex;
-  justify-content: center;
-  padding: 20px 0;
-  flex-direction: column;
-  align-items: center;
-  a {
-    font-size: 30px;
-    align-items: center;
-
-    @media (max-width: 768px) {
-      font-size: 20px;
-    }
-  }
-
-  @media (max-width: 768px) {
-    padding: unset;
-    margin-top: 20px;
   }
 `;

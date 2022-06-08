@@ -40,7 +40,7 @@ export default function Epk() {
         <Content>
           <img src="../images/signup.svg" alt="" className="signup" />
           <img src="../images/stayup.svg" alt="" className="stayup" />
-          <form
+          <FormContainer
             action="https://hnryst.us18.list-manage.com/subscribe/post?u=2b312dd30f5f08967adcaf504&amp;id=7d8fea2616"
             method="post"
             id="mc-embedded-subscribe-form"
@@ -48,7 +48,7 @@ export default function Epk() {
             className="validate"
             target="_blank"
           >
-            <div className="form-container">
+            <FieldContainer>
               <input
                 placeholder="Name"
                 type="text"
@@ -62,8 +62,8 @@ export default function Epk() {
                 name="EMAIL"
                 id="mce-EMAIL"
               />
-            </div>
-            <button
+            </FieldContainer>
+            <ButtonSubscribe
               className="button-subscribe"
               type="submit"
               value="Subscribe"
@@ -71,13 +71,13 @@ export default function Epk() {
               id="mc-embedded-subscribe"
             >
               Subscribe
-            </button>
-          </form>
+            </ButtonSubscribe>
+          </FormContainer>
 
           <img src="../images/bepart.svg" alt="" className="bepart" />
         </Content>
       </Main>
-      <Footer bio="true" />
+      <Footer bio="true" hideform />
     </Container>
   );
 }
@@ -140,67 +140,12 @@ const Content = styled.div`
     padding: 0 18px;
   }
 
-  form {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
   p {
     font-size: 40px;
     margin: 0;
     font-weight: bold;
     text-align: center;
     max-width: 60%;
-  }
-
-  .form-container {
-    display: grid;
-    margin-top: 50px;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 5%;
-    width: 100%;
-    max-width: 600px;
-    margin-bottom: 30px;
-    place-items: center;
-    justify-content: center;
-  }
-
-  input {
-    padding: 12px 14px;
-    border-radius: 4px;
-    border: none;
-    width: 100%;
-    max-width: 400px;
-    font-size: 14px;
-    &:focus {
-      outline: none;
-    }
-  }
-
-  .button-subscribe {
-    background: #00a651;
-    border: none;
-    color: white;
-    font-size: 16px;
-    padding: 12px 14px;
-    width: 100%;
-    max-width: 300px;
-    border-radius: 4px;
-    text-transform: uppercase;
-    font-weight: semibold;
-    cursor: pointer;
-    transition: all 250ms;
-    margin-bottom: 50px;
-    &:hover {
-      background: #464847;
-    }
-
-    &:focus {
-      background: #464847;
-    }
   }
 
   .stayup {
@@ -219,6 +164,60 @@ const Content = styled.div`
 
     @media (max-width: 768px) {
       height: 28px;
+    }
+  }
+`;
+const FormContainer = styled.form`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+const ButtonSubscribe = styled.div`
+  background: #00a651;
+  border: none;
+  color: white;
+  font-size: 16px;
+  padding: 12px 14px;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: semibold;
+  cursor: pointer;
+  transition: all 250ms;
+  margin-bottom: 50px;
+  text-align: center;
+  &:hover {
+    background: #464847;
+  }
+
+  &:focus {
+    background: #464847;
+  }
+`;
+
+const FieldContainer = styled.div`
+  display: grid;
+  margin-top: 50px;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5%;
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 30px;
+  place-items: center;
+  justify-content: center;
+
+  input {
+    padding: 12px 14px;
+    border-radius: 4px;
+    border: none;
+    width: 100%;
+    max-width: 400px;
+    font-size: 14px;
+    &:focus {
+      outline: none;
     }
   }
 `;

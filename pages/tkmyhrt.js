@@ -2,8 +2,8 @@ import Head from "next/head";
 import Link from "next/link";
 import styled from "styled-components";
 import Buttons from "../components/Buttons";
-import FooterCr from "../components/FooterCr";
 import BodySection from "../components/BodySection";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
@@ -60,27 +60,7 @@ export default function Home() {
         destination3="/1nlv"
       />
       {/* Footer */}
-      <Footer>
-        <a href="mailto:mzk@hnryst.com">mzk@hnryst.com</a>
-        <WrapperLogo>
-          <Instagram>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://www.instagram.com/hnryst_mzk/"
-            >
-              <img src="instagram.svg" alt="" />
-            </a>
-          </Instagram>
-          <BioFooter>
-            <Link href="bio">
-              <img src="../images/test.png" alt="" />
-            </Link>
-          </BioFooter>
-        </WrapperLogo>
-        <FooterCr home="true" />
-      </Footer>
-      {/* <Footer /> */}
+      <Footer />
     </Container>
   );
 }
@@ -273,26 +253,5 @@ const LogoTwo = styled.div`
     width: 60%;
     margin-top: 23px;
     margin-bottom: 21px;
-  }
-`;
-
-const Footer = styled.div`
-  display: flex;
-  justify-content: center;
-  padding: 20px 0;
-  flex-direction: column;
-  align-items: center;
-  a {
-    font-size: 30px;
-    align-items: center;
-
-    @media (max-width: 768px) {
-      font-size: 20px;
-    }
-  }
-
-  @media (max-width: 768px) {
-    padding: unset;
-    margin-top: 20px;
   }
 `;
