@@ -196,9 +196,10 @@ const Container = styled.div`
   }
 `;
 const Content = styled.div`
-  /* background-size: contain; */
   position: relative;
   z-index: 99;
+  padding: 0 76px;
+
   &:before {
     content: "";
     background: url("../images/hero_background.jpg");
@@ -217,7 +218,6 @@ const Content = styled.div`
       bottom: 47%;
     }
   }
-  padding: 0 76px;
   @media (max-width: 768px) {
     padding: 0 40px;
   }
