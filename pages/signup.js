@@ -46,7 +46,6 @@ export default function Epk() {
             id="mc-embedded-subscribe-form"
             name="mc-embedded-subscribe-form"
             className="validate"
-            target="_blank"
           >
             <FieldContainer>
               <input
@@ -174,7 +173,7 @@ const FormContainer = styled.form`
   align-items: center;
 `;
 
-const ButtonSubscribe = styled.div`
+const ButtonSubscribe = styled.button`
   background: #00a651;
   border: none;
   color: white;
@@ -202,12 +201,17 @@ const FieldContainer = styled.div`
   display: grid;
   margin-top: 50px;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 5%;
+  grid-gap: 30px;
   width: 100%;
   max-width: 600px;
   margin-bottom: 30px;
   place-items: center;
   justify-content: center;
+
+  @media (max-width: 768px) {
+    margin-bottom: 5%;
+    grid-gap: 5%;
+  }
 
   input {
     padding: 12px 14px;
