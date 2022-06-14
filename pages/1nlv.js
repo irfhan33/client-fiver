@@ -44,7 +44,13 @@ export default function NLV() {
             <LogoTwo>
               <img src="../images/listennow.svg" alt="" />
             </LogoTwo>
-            <Buttons />
+            <Buttons
+              spotify="https://open.spotify.com/track/687mUHJYFyCngYReM7ErFM?si=ffe40bd641964032"
+              apple="https://music.apple.com/au/album/1nlv/1611882689?i=1611882690"
+              amazon="https://music.amazon.com.au/albums/B09TH1FMS7?do=play&trackAsin=B09TH3NB6N&ref=dm_sh_cQRV9wgYktBn3dbPGXuU1IEhd"
+              deezer="https://deezer.page.link/BgDE9CRy3k9gQFSw6"
+              tidal="https://tidal.com/track/218398797"
+            />
           </Right>
         </Content>
       </Main>

@@ -43,7 +43,13 @@ export default function Home() {
             <LogoTwo>
               <img src="../images/listennow.svg" alt="" />
             </LogoTwo>
-            <Buttons />
+            <Buttons
+              spotify="https://open.spotify.com/track/6YAJsx5OV3Oho22qRGaGAl?si=NxO1UGR7TEi8nYJbyC0lVg"
+              apple="https://music.apple.com/au/album/tkmyhrt/1614092711?i=1614092712"
+              amazon="https://music.amazon.com.au/albums/B09VF56JNB?do=play&trackAsin=B09VF2LYK3&ref=dm_sh_2XaLW0wQ2nEg76RA969MoAcKn"
+              deezer="https://deezer.page.link/SF6SboYVGSvHhCnh6"
+              tidal="https://tidal.com/album/220556832"
+            />
           </Right>
         </Content>
       </Main>

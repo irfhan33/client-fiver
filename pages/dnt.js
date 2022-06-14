@@ -44,7 +44,13 @@ export default function Home() {
             <LogoTwo>
               <img src="../images/listennow.svg" alt="" />
             </LogoTwo>
-            <Buttons />
+            <Buttons
+              spotify="https://open.spotify.com/track/12ydgoE7GNRn2U9bq0miqa?si=52fYFRNlQOaSFVz-8TmwvA"
+              apple="https://music.apple.com/au/album/dnt-feat-dorah/1617824114?i=1617824115"
+              amazon="https://music.amazon.com.au/albums/B09X7CS14V?do=play&trackAsin=B09X7CDQ4G&ref=dm_sh_rhUtrXXQJXAillgrFBgLjtb6w"
+              deezer="https://deezer.page.link/P1ARZx2d3Qu2qNES9"
+              tidal="https://tidal.com/track/223792541"
+            />
           </Right>
         </Content>
       </Main>

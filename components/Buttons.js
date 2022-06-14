@@ -1,52 +1,32 @@
 import React from "react";
 import styled from "styled-components";
 
-function Buttons() {
+function Buttons({ spotify, apple, amazon, deezer, tidal }) {
   return (
     <Container>
       <IconItem>
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://open.spotify.com/track/12ydgoE7GNRn2U9bq0miqa?si=52fYFRNlQOaSFVz-8TmwvA"
-        >
+        <a target="_blank" rel="noopener noreferrer" href={spotify}>
           <img src="../images/logo/spotify.svg" alt="" />
         </a>
       </IconItem>
       <IconItem>
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://music.apple.com/au/album/dnt-feat-dorah/1617824114?i=1617824115"
-        >
+        <a target="_blank" rel="noopener noreferrer" href={apple}>
           <img src="../images/logo/apple.svg" alt="" />
         </a>
       </IconItem>
 
       <IconItem>
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://music.amazon.com.au/albums/B09X7CS14V?do=play&trackAsin=B09X7CDQ4G&ref=dm_sh_rhUtrXXQJXAillgrFBgLjtb6w"
-        >
+        <a target="_blank" rel="noopener noreferrer" href={amazon}>
           <img src="../images/logo/amazon.svg" alt="" />
         </a>
       </IconItem>
       <IconItem>
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://deezer.page.link/P1ARZx2d3Qu2qNES9"
-        >
+        <a target="_blank" rel="noopener noreferrer" href={deezer}>
           <img src="../images/logo/deejar.svg" alt="" />
         </a>
       </IconItem>
       <IconItem>
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://tidal.com/track/223792541"
-        >
+        <a target="_blank" rel="noopener noreferrer" href={tidal}>
           <img src="../images/logo/tinder.svg" alt="" />
         </a>
       </IconItem>
