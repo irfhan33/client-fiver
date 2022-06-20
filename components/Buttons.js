@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 function Buttons({ spotify, apple, amazon, deezer, tidal }) {
   return (
-    <Container>
+    <ButtonsContainer>
       <IconItem>
         <a target="_blank" rel="noopener noreferrer" href={spotify}>
           <img src="../images/logo/spotify.svg" alt="" />
@@ -30,7 +30,7 @@ function Buttons({ spotify, apple, amazon, deezer, tidal }) {
           <img src="../images/logo/tinder.svg" alt="" />
         </a>
       </IconItem>
-    </Container>
+    </ButtonsContainer>
   );
 }
 
@@ -70,7 +70,7 @@ const IconItem = styled.div`
   }
 `;
 
-const Container = styled.div`
+const ButtonsContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   text-align: center;

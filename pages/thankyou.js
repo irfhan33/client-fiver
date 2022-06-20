@@ -29,6 +29,9 @@ export default function Thankyo() {
       {/* Body */}
       <Main>
         <Content>
+          <h3>
+            <a href="/">Return to HNRY ST</a>
+          </h3>
           <h2>Welcome to the HNRY ST mzk Family!</h2>
           <h1>
             Thanks for subscribing to HNRY ST mzk <br /> We will stay in
@@ -134,9 +137,17 @@ const Content = styled.div`
   h1 {
     color: #00a651;
     font-size: max(4vw, 24px);
+    font-family: "Raleway", sans-serif;
   }
 
   h2 {
     font-size: max(3vw, 20px);
+    font-family: "Raleway", sans-serif;
+  }
+
+  h3 {
+    font-size: max(3vw, 18px);
+    font-family: "Raleway", sans-serif;
+    text-decoration: underline;
   }
 `;
