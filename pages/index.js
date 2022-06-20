@@ -292,30 +292,31 @@ export default function Home() {
           <span>[KYZ]</span> (feat. Dorah & Antonio Giardina).
         </p>
         <p>
-          The release of DNT <span>[KYZ]</span> brings together the song's
+          The release of DNT <span>[KYZ]</span> brings together the song&lsquo;s
           original ideas and concpets as well as the topline from Dorah with an
           incredibly moving piano piece fron concert pianist, Antonio Giardina.
         </p>
 
         <p>
-          "This by no means is a new idea (a stripped version of a track) but it
+          “This by no means is a new idea (a stripped version of a track) but it
           never occured to me to do it for DNT until happened to stumle across
-          Marshmello's stripped version of Happier. I loved it and it just
-          happened to be at the time I had put the final touches on DNT"
+          Marshmello&lsquo;s stripped version of Happier. I loved it and it just
+          happened to be at the time I had put the final touches on DNT”
         </p>
 
         <p>
           HNRY ST set about putting down some keys for the track and while it
-          sounded"just OK",it wasn't reaching any great heights!
+          sounded “just OK”, it wasn&lsquo;t reaching any great heights!
         </p>
 
         <p>
-          "I'd reimagined the original chords from DNT and added some really
-          nice strings but it just wasn't hitting where I'd hoped".
+          “I&lsquo;d reimagined the original chords from DNT and added some
+          really nice strings but it just wasn&lsquo;t hitting where I&lsquo;d
+          hoped”.
         </p>
         <p>
-          "I did some searching online and was incredibly fortunate to find and
-          meet Antonio."
+          “I did some searching online and was incredibly fortunate to find and
+          meet Antonio.”
         </p>
 
         <p>
@@ -324,10 +325,10 @@ export default function Home() {
         </p>
 
         <p>
-          "Antonio is world class! A genius! I asked Antonio if he could put
+          “Antonio is world class! A genius! I asked Antonio if he could put
           together an arrangement for me? What I got in return was a piece that
           not only worked for the song but also gave it another
-          dimension,allowing it to stand on it's own".
+          dimension,allowing it to stand on it&lsquo;s own”.
         </p>
 
         <p>
@@ -336,16 +337,17 @@ export default function Home() {
         </p>
 
         <p>
-          "Dorah's vocal was already amazing on this song but it positively
-          burst through this piano piece. I had a fair idea that the concept
-          would work from what I was hearing from my initial attempts at the
-          arrangement".
+          “Dorah&lsquo;s vocal was already amazing on this song but it
+          positively burst through this piano piece. I had a fair idea that the
+          concept would work from what I was hearing from my initial attempts at
+          the arrangement”.
         </p>
 
         <p>
-          Dorah adds:"DNT came out better than I expected. HNRY ST and I ended
-          up working on the lyrics together and it's a song I just love.It's
-          about being exactly where you want to be and how good it feels."
+          Dorah adds:“DNT came out better than I expected. HNRY ST and I ended
+          up working on the lyrics together and it&lsquo;s a song I just
+          love.It&lsquo;s about being exactly where you want to be and how good
+          it feels.”
         </p>
 
         <p>
@@ -354,9 +356,9 @@ export default function Home() {
         </p>
 
         <p>
-          "I'm so happy for this song to finally be out. I've listened to it
-          hundreds of times. I just love it, too. It feels like the DNT trilogy
-          is complete".
+          “I&lsquo;m so happy for this song to finally be out. I&lsquo;ve
+          listened to it hundreds of times. I just love it, too. It feels like
+          the DNT trilogy is complete”.
         </p>
         <p>Or is it .....?</p>
 

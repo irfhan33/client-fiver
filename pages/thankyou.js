@@ -29,9 +29,9 @@ export default function Thankyo() {
       {/* Body */}
       <Main>
         <Content>
-          <h3>
-            <a href="/">Return to HNRY ST</a>
-          </h3>
+          <Link href="/">
+            <h3>Return to HNRY ST</h3>
+          </Link>
           <h2>Welcome to the HNRY ST mzk Family!</h2>
           <h1>
             Thanks for subscribing to HNRY ST mzk <br /> We will stay in
