@@ -35,7 +35,9 @@ export default function Home() {
       {/* Body */}
       <Main>
         <h1>NEW mzk!</h1>
-        <h1 className="orange">DNT [KYZ]</h1>
+        <h1 className="orange">
+          DNT <span>[KYZ]</span>
+        </h1>
         <h1 className="orange">(feat. Dorah & Antonio Giardina)</h1>
         <Content>
           {/* Thumbnail */}
@@ -293,15 +295,16 @@ export default function Home() {
         </p>
         <p>
           The release of DNT <span>[KYZ]</span> brings together the song&lsquo;s
-          original ideas and concpets as well as the topline from Dorah with an
-          incredibly moving piano piece fron concert pianist, Antonio Giardina.
+          original ideas and concepts as well as the topline from Dorah with an
+          incredibly moving piano piece form concert pianist, Antonio Giardina.
         </p>
 
         <p>
           “This by no means is a new idea (a stripped version of a track) but it
-          never occured to me to do it for DNT until happened to stumle across
-          Marshmello&lsquo;s stripped version of Happier. I loved it and it just
-          happened to be at the time I had put the final touches on DNT”
+          never occurred to me to do it for DNT until I happened to stumble
+          across Marshmello&lsquo;s stripped version of Happier. I loved it and
+          it just happened to be at the time I had put the final touches on
+          DNT”.
         </p>
 
         <p>
@@ -344,7 +347,7 @@ export default function Home() {
         </p>
 
         <p>
-          Dorah adds:“DNT came out better than I expected. HNRY ST and I ended
+          Dorah adds: “DNT came out better than I expected. HNRY ST and I ended
           up working on the lyrics together and it&lsquo;s a song I just
           love.It&lsquo;s about being exactly where you want to be and how good
           it feels.”
@@ -682,6 +685,10 @@ const Main = styled.div`
     line-height: 40px;
     margin-bottom: clamp(10px, 2vw, 30px);
     margin-top: 0;
+
+    span {
+      font-size: clamp(24px, 6vw, 34px);
+    }
   }
 
   &:before {
