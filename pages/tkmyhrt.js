@@ -55,15 +55,18 @@ export default function Home() {
       </Main>
 
       <BodySection
-        image1="../images/dnt-xtnd-cover.jpg"
-        titleImage1="../images/dnt-xtnd-horizontal.svg"
+        image1="../images/dntkyz-cover.jpg"
+        titleImage1="../images/dntkyz-horizontal.svg"
         destination1="/"
-        image2="../images/dnt-cover.png"
-        titleImage2="../images/DNT.svg"
-        destination2="/dnt"
-        image3="../images/1NLV_Cover_Artwork_800.jpg"
-        titleImage3="../images/1NLV_BIG.svg"
-        destination3="/1nlv"
+        image2="../images/dnt-xtnd-cover.jpg"
+        titleImage2="../images/dnt-xtnd-horizontal.svg"
+        destination2="/dntxtnd"
+        image3="../images/dnt-cover.png"
+        titleImage3="../images/DNT.svg"
+        destination3="/dnt"
+        image4="../images/1NLV_Cover_Artwork_800.jpg"
+        titleImage4="../images/1NLV_BIG.svg"
+        destination4="/1nlv"
       />
       {/* Footer */}
       <Footer />

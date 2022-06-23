@@ -56,15 +56,18 @@ export default function NLV() {
       </Main>
 
       <BodySection
-        image1="../images/dnt-xtnd-cover.jpg"
-        titleImage1="../images/dnt-xtnd-horizontal.svg"
+        image1="../images/dntkyz-cover.jpg"
+        titleImage1="../images/dntkyz-horizontal.svg"
         destination1="/"
-        image2="../images/dnt-cover.png"
-        titleImage2="../images/DNT.svg"
-        destination2="/dnt"
-        image3="../images/TKMYHRT_Cover_Artwork_v6.jpg"
-        titleImage3="../images/TKMYHRT_BIG.svg"
-        destination3="/tkmyhrt"
+        image2="../images/dnt-xtnd-cover.jpg"
+        titleImage2="../images/dnt-xtnd-horizontal.svg"
+        destination2="/dntxtnd"
+        image3="../images/dnt-cover.png"
+        titleImage3="../images/DNT.svg"
+        destination3="/dnt"
+        image4="../images/TKMYHRT_Cover_Artwork_v6.jpg"
+        titleImage4="../images/TKMYHRT_BIG.svg"
+        destination4="/tkmyhrt"
       />
       {/* Footer */}
       <Footer />
